@@ -1,0 +1,16 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#1a2b3d"/>
+  
+  <!-- FFM Text -->
+  <text x="400" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="120" font-weight="bold" fill="#c4c4c4">FFM</text>
+  
+  <!-- Chevron Design Element -->
+  <g stroke="#c4c4c4" stroke-width="6" fill="none">
+    <polyline points="250,290 400,330 550,290"/>
+  </g>
+  
+  <!-- Fractional Facilities Management Text -->
+  <text x="400" y="420" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" font-weight="normal" fill="#c4c4c4" letter-spacing="8">FRACTIONAL FACILITIES</text>
+  <text x="400" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" font-weight="normal" fill="#c4c4c4" letter-spacing="8">MANAGEMENT</text>
+</svg>

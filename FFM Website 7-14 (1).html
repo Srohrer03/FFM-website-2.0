@@ -1,0 +1,5216 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FFM - Facilities Management. Flat Fee. Maximum Value.</title>
+<!-- SEO Meta Tags -->
+<meta content="Fractional Facilities Management with transparent flat-fee pricing. Expert vendor network, smart escrow system, and real-time project tracking for all facility types." name="description"/>
+<meta content="fractional facilities management, flat fee, vendor network, project tracking, facility maintenance coordination, escrow management" name="keywords"/>
+<meta content="FFM - Fractional Facilities Management" name="author"/>
+<!-- Open Graph Meta Tags -->
+<meta content="FFM - Facilities Management. Flat Fee. Maximum Value." property="og:title"/>
+<meta content="Fractional Facilities Management with transparent flat-fee pricing, pre-vetted vendor network, and smart escrow protection." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://ffm-facilities.com" property="og:url"/>
+<meta content="FFM - Fractional Facilities Management" property="og:site_name"/>
+<!-- Twitter Card Meta Tags -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="FFM - Facilities Management. Flat Fee. Maximum Value." name="twitter:title"/>
+<meta content="Fractional Facilities Management with transparent flat-fee pricing and pre-vetted vendor network coordination." name="twitter:description"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Raleway:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<!-- Font Awesome Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+<style>
+/* CSS Variables for Enhanced Color Scheme */
+:root {
+  --primary-navy: #1e3a5f;
+  --secondary-navy: #2c4866;
+  --dark-navy: #15293d;
+  --metallic-silver: #c4c8cc;
+  --light-silver: #d8dce0;
+  --silver-accent: #a8b2bc;
+  --white: #ffffff;
+  --text-light: #e8eaed;
+  --accent-blue: #3d5a7a;
+  --silver-glow: #e1e5e9;
+
+  /* Enhanced Accent Colors */
+  --electric-teal: #00d4aa;
+  --electric-teal-dark: #00b894;
+  --orange-accent: #ff7675;
+  --blue-accent: #74b9ff;
+  --success-green: #00b894;
+  --warning-orange: #fdcb6e;
+  --error-red: #e17055;
+}
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  line-height: 1.7;
+  color: var(--text-light);
+  background: var(--dark-navy);
+  min-height: 100vh;
+  overflow-x: hidden;
+  padding-top: 100px; /* Add padding to prevent header from covering content */
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Enhanced Logo Design */
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.02);
+}
+
+.logo-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-ffm {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--metallic-silver) !important;
+  letter-spacing: 0.15em;
+  text-shadow: 0 2px 10px rgba(196, 200, 204, 0.4);
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 15px;
+}
+
+.logo-chevron {
+  position: relative;
+  width: 140px;
+  height: 15px;
+  margin: 0 auto 15px auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.logo-chevron::before,
+.logo-chevron::after {
+  content: '';
+  position: absolute;
+  width: 70px;
+  height: 2px;
+  background: var(--metallic-silver) !important;
+  filter: drop-shadow(0 2px 4px rgba(196, 200, 204, 0.3));
+  bottom: 0;
+}
+
+.logo-chevron::before {
+  left: 0;
+  transform: rotate(8deg);
+  transform-origin: right bottom;
+}
+
+.logo-chevron::after {
+  right: 0;
+  transform: rotate(-8deg);
+  transform-origin: left bottom;
+}
+
+.logo-subtitle {
+  font-size: 0.9rem;
+  color: var(--metallic-silver) !important;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.3;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(21, 41, 61, 0.95);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid rgba(196, 200, 204, 0.1);
+  transition: background 0.3s ease;
+  min-height: 90px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav a {
+  color: var(--text-light);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  position: relative;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: var(--electric-teal);
+  background: rgba(0, 212, 170, 0.1);
+}
+
+/* Enhanced Button Styles */
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: inherit;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s;
+}
+
+.btn:hover::before {
+  left: 100%;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--electric-teal), var(--electric-teal-dark));
+  color: var(--dark-navy);
+  box-shadow: 0 4px 15px rgba(0, 212, 170, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 212, 170, 0.4);
+}
+
+.btn-secondary {
+  background: var(--primary-navy);
+  color: var(--white);
+  box-shadow: 0 4px 15px rgba(30, 58, 95, 0.3);
+}
+
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary.active {
+  background: linear-gradient(135deg, var(--electric-teal), var(--electric-teal-dark));
+  color: var(--dark-navy);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 212, 170, 0.4);
+}
+
+.btn-outline {
+  background: var(--primary-navy);
+  color: var(--white);
+  border: 2px solid var(--primary-navy);
+  box-shadow: 0 4px 15px rgba(30, 58, 95, 0.3);
+}
+
+.btn-outline:hover,
+.btn-outline:active,
+.btn-outline.active {
+  background: linear-gradient(135deg, var(--electric-teal), var(--electric-teal-dark));
+  color: var(--dark-navy);
+  border-color: var(--electric-teal);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 212, 170, 0.4);
+}
+
+.btn-header {
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  background: var(--primary-navy);
+  color: var(--white);
+  box-shadow: 0 4px 15px rgba(30, 58, 95, 0.3);
+}
+
+.btn-header:hover,
+.btn-header:active,
+.btn-header.active {
+  background: linear-gradient(135deg, var(--electric-teal), var(--electric-teal-dark));
+  color: var(--dark-navy);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 212, 170, 0.4);
+}
+
+.btn-vendor {
+  background: var(--primary-navy);
+  color: var(--white);
+  box-shadow: 0 4px 15px rgba(30, 58, 95, 0.3);
+}
+
+.btn-vendor:hover,
+.btn-vendor:active,
+.btn-vendor.active {
+  background: linear-gradient(135deg, var(--electric-teal), var(--electric-teal-dark));
+  color: var(--dark-navy);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 212, 170, 0.4);
+}
+
+/* Mobile Menu */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--metallic-silver);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu-btn:hover {
+  color: var(--electric-teal);
+  background: rgba(0, 212, 170, 0.1);
+}
+
+.mobile-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.mobile-overlay.active {
+  opacity: 1;
+}
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 280px;
+  height: 100vh;
+  background: var(--dark-navy);
+  backdrop-filter: blur(20px);
+  border-left: 1px solid rgba(196, 200, 204, 0.2);
+  z-index: 1000;
+  transition: right 0.3s ease;
+  padding: 6rem 2rem 2rem;
+  box-shadow: -10px 0 40px rgba(0, 0, 0, 0.3);
+}
+
+.mobile-nav.active {
+  right: 0;
+}
+
+.mobile-nav a {
+  display: block;
+  color: var(--text-light);
+  text-decoration: none;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(196, 200, 204, 0.1);
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.mobile-nav a:hover {
+  color: var(--electric-teal);
+  padding-left: 1rem;
+}
+
+/* Hero Section with Enhanced Logo */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8rem 2rem 4rem;
+  background: var(--dark-navy);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(176,190,197,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+  opacity: 0.3;
+}
+
+.hero-content {
+  max-width: 800px;
+  z-index: 2;
+  position: relative;
+}
+
+.hero-logo {
+  margin-bottom: 3rem;
+}
+
+.hero-logo-text {
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--metallic-silver) !important;
+  letter-spacing: 0.15em;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 10px rgba(196, 200, 204, 0.4);
+}
+
+.hero-chevron {
+  position: relative;
+  width: 220px;
+  height: 20px;
+  margin: 0 auto 20px auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.hero-chevron::before,
+.hero-chevron::after {
+  content: '';
+  position: absolute;
+  width: 110px;
+  height: 3px;
+  background: var(--metallic-silver) !important;
+  filter: drop-shadow(0 2px 4px rgba(196, 200, 204, 0.3));
+  bottom: 0;
+}
+
+.hero-chevron::before {
+  left: 0;
+  transform: rotate(8deg);
+  transform-origin: right bottom;
+}
+
+.hero-chevron::after {
+  right: 0;
+  transform: rotate(-8deg);
+  transform-origin: left bottom;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  color: var(--metallic-silver) !important;
+  letter-spacing: 0.15em;
+  line-height: 1.3;
+  font-weight: 400;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: var(--white);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.hero .hero-subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
+  color: var(--metallic-silver);
+  font-weight: 300;
+  animation: fadeInUp 0.8s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+/* CTA Buttons */
+.cta-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 4rem;
+  animation: fadeInUp 0.8s ease-out 0.4s forwards;
+  opacity: 0;
+}
+
+/* Trust Indicators */
+.trust-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  animation: fadeInUp 0.8s ease-out 0.6s forwards;
+  opacity: 0;
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--silver-accent);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.trust-item i {
+  color: var(--electric-teal);
+  font-size: 1.2rem;
+}
+
+/* Stats Banner */
+.stats-banner {
+  background: linear-gradient(135deg, var(--electric-teal), var(--electric-teal-dark));
+  padding: 4rem 2rem;
+  color: white;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+
+.stat-item {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+  display: block;
+  font-family: 'Raleway', sans-serif;
+}
+
+.stat-label {
+  font-size: 1rem;
+  opacity: 0.9;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Cost Calculator */
+.cost-calculator {
+  padding: 6rem 2rem;
+  background: var(--dark-navy);
+  border-top: 1px solid rgba(196, 200, 204, 0.1);
+}
+
+.cost-calculator h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--white);
+  font-weight: 300;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--silver-accent);
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+}
+
+.calculator-card {
+  background: linear-gradient(135deg, rgba(196, 200, 204, 0.08) 0%, rgba(168, 178, 188, 0.04) 100%);
+  backdrop-filter: blur(20px);
+  padding: 3rem;
+  border-radius: 16px;
+  border: 1px solid rgba(196, 200, 204, 0.15);
+  box-shadow: 0 10px 40px rgba(21, 41, 61, 0.3);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.calculator-form {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  align-items: end;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form-group input,
+.form-group select {
+  padding: 1rem;
+  border: 1px solid rgba(196, 200, 204, 0.3);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--white);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--electric-teal);
+  box-shadow: 0 0 0 3px rgba(0, 212, 170, 0.1);
+}
+
+.form-group input::placeholder {
+  color: var(--silver-accent);
+}
+
+.calc-btn {
+  grid-column: 1 / -1;
+  justify-self: center;
+  padding: 1rem 2rem;
+}
+
+.calc-results {
+  text-align: center;
+  min-height: 60px;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: rgba(0, 212, 170, 0.05);
+  border: 1px solid rgba(0, 212, 170, 0.2);
+}
+
+.calc-results .savings-result {
+  color: var(--electric-teal);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Platform Preview */
+.platform-preview {
+  padding: 6rem 2rem;
+  background: var(--dark-navy);
+  border-top: 1px solid rgba(196, 200, 204, 0.1);
+}
+
+.platform-preview h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--white);
+  font-weight: 300;
+}
+
+.platform-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  padding: 1rem 2rem;
+  background: transparent;
+  color: var(--silver-accent);
+  border: 2px solid var(--silver-accent);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.tab-btn.active,
+.tab-btn:hover {
+  background: var(--electric-teal);
+  color: var(--dark-navy);
+  border-color: var(--electric-teal);
+}
+
+.tab-content {
+  display: none;
+  animation: fadeInUp 0.5s ease;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.demo-interface {
+  background: linear-gradient(135deg, rgba(196, 200, 204, 0.08) 0%, rgba(168, 178, 188, 0.04) 100%);
+  border-radius: 16px;
+  padding: 2rem;
+  border: 1px solid rgba(196, 200, 204, 0.15);
+  backdrop-filter: blur(20px);
+}
+
+.demo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.demo-header h4 {
+  color: var(--white);
+  font-size: 1.3rem;
+}
+
+.demo-metrics {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.metric {
+  text-align: center;
+}
+
+.metric-value {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--electric-teal);
+}
+
+.metric-label {
+  font-size: 0.9rem;
+  color: var(--silver-accent);
+}
+
+.feature-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(0, 212, 170, 0.05);
+  border-radius: 8px;
+  border: 1px solid rgba(0, 212, 170, 0.1);
+  color: var(--text-light);
+}
+
+.feature-item i {
+  color: var(--electric-teal);
+  font-size: 1.2rem;
+}
+
+/* Project List Styles */
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background: rgba(0, 212, 170, 0.03);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 212, 170, 0.1);
+}
+
+.project-info h5 {
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.project-info p {
+  color: var(--silver-accent);
+  font-size: 0.9rem;
+}
+
+.project-status {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-badge.in-progress {
+  background: var(--electric-teal);
+  color: var(--dark-navy);
+}
+
+.status-badge.scheduled {
+  background: var(--blue-accent);
+  color: var(--white);
+}
+
+.progress-bar {
+  width: 100px;
+  height: 4px;
+  background: rgba(196, 200, 204, 0.2);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--electric-teal);
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+/* Vendor Grid */
+.vendor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.vendor-card {
+  padding: 1.5rem;
+  background: rgba(0, 212, 170, 0.03);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 212, 170, 0.1);
+  text-align: center;
+}
+
+.vendor-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.rating {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--electric-teal);
+}
+
+.stars {
+  color: var(--electric-teal);
+}
+
+.vendor-card h5 {
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.vendor-card p {
+  color: var(--silver-accent);
+  margin-bottom: 1rem;
+}
+
+.vendor-stats {
+  padding: 0.5rem;
+  background: rgba(0, 212, 170, 0.1);
+  border-radius: 6px;
+  font-size: 0.8rem;
+  color: var(--electric-teal);
+  font-weight: 600;
+}
+
+/* Budget Overview */
+.budget-overview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.chart-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  background: rgba(0, 212, 170, 0.05);
+  border-radius: 12px;
+  border: 2px dashed rgba(0, 212, 170, 0.2);
+  color: var(--silver-accent);
+}
+
+.chart-placeholder i {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--electric-teal);
+}
+
+.budget-features {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Value Propositions */
+.value-props {
+  padding: 6rem 2rem;
+  background: var(--dark-navy);
+  border-top: 1px solid rgba(196, 200, 204, 0.1);
+}
+
+.value-props h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+  color: var(--white);
+  font-weight: 300;
+}
+
+.props-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+}
+
+.prop-card {
+  background: linear-gradient(135deg, rgba(196, 200, 204, 0.08) 0%, rgba(168, 178, 188, 0.04) 100%);
+  backdrop-filter: blur(20px);
+  padding: 2.5rem;
+  border-radius: 16px;
+  border: 1px solid rgba(196, 200, 204, 0.15);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 10px 40px rgba(21, 41, 61, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.prop-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--electric-teal), var(--blue-accent));
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+.prop-card:hover::before {
+  transform: scaleX(1);
+}
+
+.prop-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--electric-teal);
+  box-shadow: 0 20px 60px rgba(0, 212, 170, 0.15);
+}
+
+.prop-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--electric-teal), var(--blue-accent));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 212, 170, 0.3);
+}
+
+.prop-icon i {
+  color: var(--dark-navy);
+  font-size: 1.5rem;
+}
+
+.prop-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--white);
+  font-weight: 600;
+}
+
+.prop-card p {
+  margin-bottom: 1.5rem;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.prop-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.prop-benefits span {
+  color: var(--electric-teal);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 6rem 2rem;
+  background: var(--dark-navy);
+  border-top: 1px solid rgba(196, 200, 204, 0.1);
+}
+
+.testimonials h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+  color: var(--white);
+  font-weight: 300;
+}
+
+.testimonials-carousel {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.testimonial-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimonial-slide {
+  min-width: 100%;
+  padding: 0 1rem;
+}
+
+.testimonial-card {
+  background: linear-gradient(135deg, rgba(196, 200, 204, 0.08) 0%, rgba(168, 178, 188, 0.04) 100%);
+  backdrop-filter: blur(20px);
+  padding: 3rem;
+  border-radius: 16px;
+  border: 1px solid rgba(196, 200, 204, 0.15);
+  box-shadow: 0 10px 40px rgba(21, 41, 61, 0.3);
+  text-align: center;
+}
+
+.quote-icon {
+  margin-bottom: 1.5rem;
+}
+
+.quote-icon i {
+  font-size: 2rem;
+  color: var(--electric-teal);
+  opacity: 0.7;
+}
+
+.testimonial-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.testimonial-author {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.author-info {
+  text-align: left;
+}
+
+.author-info h4 {
+  color: var(--white);
+  margin-bottom: 0.25rem;
+}
+
+.author-info span {
+  color: var(--electric-teal);
+  font-weight: 600;
+}
+
+.company-size {
+  color: var(--silver-accent);
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+
+.savings-badge,
+.vendor-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.savings-badge {
+  background: linear-gradient(135deg, var(--success-green), var(--electric-teal));
+  color: var(--white);
+}
+
+.vendor-badge {
+  background: linear-gradient(135deg, var(--orange-accent), var(--warning-orange));
+  color: var(--white);
+}
+
+/* Carousel Controls */
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.carousel-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--electric-teal);
+  background: rgba(0, 212, 170, 0.1);
+  color: var(--electric-teal);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background: var(--electric-teal);
+  color: var(--dark-navy);
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(196, 200, 204, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background: var(--electric-teal);
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 6rem 2rem;
+  background: var(--dark-navy);
+  border-top: 1px solid rgba(196, 200, 204, 0.1);
+}
+
+.faq-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+  color: var(--white);
+  font-weight: 300;
+}
+
+.faq-grid {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: linear-gradient(135deg, rgba(196, 200, 204, 0.08) 0%, rgba(168, 178, 188, 0.04) 100%);
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(196, 200, 204, 0.15);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-question {
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+  background: rgba(0, 212, 170, 0.05);
+}
+
+.faq-question h3 {
+  color: var(--white);
+  font-weight: 600;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.faq-question i {
+  color: var(--electric-teal);
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-question i {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  background: rgba(0, 212, 170, 0.02);
+}
+
+.faq-item.active .faq-answer {
+  max-height: 300px;
+  padding: 1.5rem 2rem;
+}
+
+.faq-answer p {
+  color: var(--text-light);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Newsletter Section */
+.newsletter {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, rgba(196, 200, 204, 0.08) 0%, rgba(168, 178, 188, 0.04) 100%);
+  border-top: 1px solid rgba(196, 200, 204, 0.1);
+}
+
+.newsletter-content {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.newsletter-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.newsletter-text h2 {
+  color: var(--white);
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.newsletter-text p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 1rem;
+  min-width: 350px;
+  flex: 1;
+  max-width: 500px;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 1rem;
+  border: 1px solid rgba(196, 200, 204, 0.3);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--white);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.newsletter-form input:focus {
+  outline: none;
+  border-color: var(--electric-teal);
+  box-shadow: 0 0 0 3px rgba(0, 212, 170, 0.1);
+}
+
+.newsletter-form input::placeholder {
+  color: var(--silver-accent);
+}
+
+/* Footer */
+.footer {
+  background: var(--dark-navy);
+  padding: 4rem 2rem 2rem;
+  border-top: 1px solid rgba(196, 200, 204, 0.2);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: var(--white);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer-section p,
+.footer-section a {
+  color: var(--text-light);
+  text-decoration: none;
+  line-height: 1.8;
+  transition: color 0.3s ease;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.footer-section a:hover {
+  color: var(--electric-teal);
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-links a {
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 212, 170, 0.1);
+  border: 1px solid var(--electric-teal);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--electric-teal);
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background: var(--electric-teal);
+  color: var(--dark-navy);
+}
+
+.footer-cta {
+  margin-bottom: 1rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(196, 200, 204, 0.2);
+  padding-top: 2rem;
+  text-align: center;
+  color: var(--silver-accent);
+}
+
+/* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 50px;
+  height: 50px;
+  background: var(--electric-teal);
+  color: var(--dark-navy);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 20px rgba(0, 212, 170, 0.3);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.back-to-top:hover {
+  background: var(--electric-teal-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 212, 170, 0.4);
+}
+
+.back-to-top.visible {
+  display: flex;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  z-index: 2000;
+}
+
+.modal {
+  background: var(--dark-navy);
+  margin: 5% auto;
+  padding: 0;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 500px;
+  border: 1px solid rgba(196, 200, 204, 0.2);
+  box-shadow: 0 20px 60px rgba(21, 41, 61, 0.6);
+  position: relative;
+}
+
+.modal-header {
+  padding: 2rem 2rem 1rem;
+  border-bottom: 1px solid rgba(196, 200, 204, 0.1);
+}
+
+.modal-header h3 {
+  color: var(--white);
+  margin: 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  color: var(--silver-accent);
+  font-size: 2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.modal-close:hover {
+  color: var(--electric-teal);
+}
+
+.modal-body {
+  padding: 2rem;
+}
+
+.demo-credentials {
+  background: rgba(0, 212, 170, 0.1);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid var(--electric-teal);
+}
+
+.demo-credentials h4 {
+  color: var(--electric-teal);
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.demo-credentials p {
+  color: var(--text-light);
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+/* Onboarding Modal Styles */
+.onboarding-modal {
+  z-index: 2500;
+}
+
+.onboarding-container {
+  background: var(--dark-navy);
+  margin: 2% auto;
+  padding: 0;
+  border-radius: 20px;
+  width: 95%;
+  max-width: 900px;
+  max-height: 95vh;
+  border: 1px solid rgba(196, 200, 204, 0.2);
+  box-shadow: 0 20px 60px rgba(21, 41, 61, 0.8);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.onboarding-header {
+  background: linear-gradient(135deg, var(--primary-navy), var(--secondary-navy));
+  padding: 2rem;
+  border-bottom: 1px solid rgba(196, 200, 204, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.onboarding-logo .logo-ffm {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--metallic-silver);
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5rem;
+}
+
+.onboarding-logo .logo-subtitle {
+  font-size: 0.9rem;
+  color: var(--electric-teal);
+  letter-spacing: 0.2em;
+  font-weight: 600;
+}
+
+.onboarding-progress {
+  background: rgba(196, 200, 204, 0.05);
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid rgba(196, 200, 204, 0.1);
+}
+
+.progress-bar-container {
+  width: 100%;
+  height: 6px;
+  background: rgba(196, 200, 204, 0.2);
+  border-radius: 3px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--electric-teal), var(--blue-accent));
+  border-radius: 3px;
+  transition: width 0.5s ease;
+  width: 14.28%; /* 1/7 steps */
+}
+
+.progress-steps {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.progress-steps .step {
+  font-size: 0.8rem;
+  color: var(--silver-accent);
+  font-weight: 500;
+  text-align: center;
+  min-width: 80px;
+  padding: 0.25rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.progress-steps .step.active {
+  color: var(--electric-teal);
+  background: rgba(0, 212, 170, 0.1);
+  font-weight: 600;
+}
+
+.progress-steps .step.completed {
+  color: var(--success-green);
+  background: rgba(0, 184, 148, 0.1);
+}
+
+.onboarding-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 2rem;
+}
+
+.onboarding-step {
+  display: none;
+  animation: fadeInUp 0.5s ease;
+}
+
+.onboarding-step.active {
+  display: block;
+}
+
+.step-title {
+  font-size: 1.8rem;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.step-description {
+  color: var(--silver-accent);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.onboarding-form {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.form-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.form-grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.onboarding-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.onboarding-form .form-group label {
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.onboarding-form .form-group input,
+.onboarding-form .form-group select,
+.onboarding-form .form-group textarea {
+  padding: 0.75rem;
+  border: 1px solid rgba(196, 200, 204, 0.3);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--white);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.onboarding-form .form-group input:focus,
+.onboarding-form .form-group select:focus,
+.onboarding-form .form-group textarea:focus {
+  outline: none;
+  border-color: var(--electric-teal);
+  box-shadow: 0 0 0 3px rgba(0, 212, 170, 0.1);
+}
+
+.onboarding-form .form-group input::placeholder,
+.onboarding-form .form-group textarea::placeholder {
+  color: var(--silver-accent);
+}
+
+.file-upload-area {
+  border: 2px dashed rgba(0, 212, 170, 0.3);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  background: rgba(0, 212, 170, 0.05);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.file-upload-area:hover {
+  border-color: var(--electric-teal);
+  background: rgba(0, 212, 170, 0.1);
+}
+
+.file-upload-area.dragover {
+  border-color: var(--electric-teal);
+  background: rgba(0, 212, 170, 0.15);
+  transform: scale(1.02);
+}
+
+.file-upload-icon {
+  font-size: 2.5rem;
+  color: var(--electric-teal);
+  margin-bottom: 1rem;
+}
+
+.file-upload-text {
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+}
+
+.file-upload-hint {
+  color: var(--silver-accent);
+  font-size: 0.8rem;
+}
+
+.uploaded-files {
+  margin-top: 1rem;
+}
+
+.uploaded-file {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem;
+  background: rgba(0, 212, 170, 0.1);
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  border: 1px solid rgba(0, 212, 170, 0.2);
+}
+
+.uploaded-file-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.uploaded-file-info i {
+  color: var(--electric-teal);
+}
+
+.uploaded-file-name {
+  color: var(--white);
+  font-weight: 500;
+}
+
+.uploaded-file-size {
+  color: var(--silver-accent);
+  font-size: 0.8rem;
+}
+
+.remove-file {
+  background: none;
+  border: none;
+  color: var(--orange-accent);
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.remove-file:hover {
+  background: rgba(225, 112, 85, 0.1);
+}
+
+.contact-group {
+  background: rgba(0, 212, 170, 0.05);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 212, 170, 0.1);
+  margin-bottom: 1rem;
+}
+
+.contact-group h4 {
+  color: var(--electric-teal);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.budget-card {
+  background: rgba(0, 212, 170, 0.05);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 212, 170, 0.1);
+  margin-bottom: 1rem;
+}
+
+.budget-card h4 {
+  color: var(--electric-teal);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.role-assignment {
+  background: rgba(0, 212, 170, 0.05);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 212, 170, 0.1);
+  margin-bottom: 1rem;
+}
+
+.role-assignment h4 {
+  color: var(--electric-teal);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.onboarding-footer {
+  background: rgba(196, 200, 204, 0.05);
+  padding: 1.5rem 2rem;
+  border-top: 1px solid rgba(196, 200, 204, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.step-indicator {
+  color: var(--silver-accent);
+  font-weight: 500;
+}
+
+.step-indicator span {
+  color: var(--electric-teal);
+  font-weight: 700;
+}
+
+.completion-summary {
+  text-align: center;
+  padding: 2rem;
+}
+
+.completion-icon {
+  font-size: 4rem;
+  color: var(--success-green);
+  margin-bottom: 1rem;
+}
+
+.completion-title {
+  font-size: 2rem;
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.completion-message {
+  color: var(--silver-accent);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.next-steps {
+  background: rgba(0, 212, 170, 0.05);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 212, 170, 0.1);
+  text-align: left;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.next-steps h4 {
+  color: var(--electric-teal);
+  margin-bottom: 1rem;
+}
+
+.next-steps ul {
+  color: var(--text-light);
+  list-style: none;
+  padding: 0;
+}
+
+.next-steps li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(0, 212, 170, 0.1);
+}
+
+.next-steps li:last-child {
+  border-bottom: none;
+}
+
+.next-steps i {
+  color: var(--electric-teal);
+  margin-right: 0.5rem;
+  width: 16px;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-content > * {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.hero-content > *:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.hero-content > *:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.hero-content > *:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .mobile-menu-btn,
+  .mobile-nav,
+  .mobile-overlay {
+    display: block;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-logo-text {
+    font-size: 3rem;
+    letter-spacing: 8px;
+  }
+
+  .hero-chevron {
+    width: 200px;
+  }
+
+  .cta-buttons {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+    margin: 0 auto 3rem;
+  }
+
+  .trust-indicators {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .platform-tabs {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .demo-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .demo-metrics {
+    gap: 1rem;
+  }
+
+  .project-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .project-status {
+    align-items: flex-start;
+  }
+
+  .testimonial-author {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .newsletter-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .newsletter-form {
+    min-width: auto;
+    max-width: none;
+  }
+
+  .budget-overview {
+    grid-template-columns: 1fr;
+  }
+  
+  .onboarding-container {
+    width: 98%;
+    max-height: 98vh;
+    margin: 1% auto;
+  }
+  
+  .onboarding-header {
+    padding: 1rem;
+  }
+  
+  .onboarding-progress {
+    padding: 1rem;
+  }
+  
+  .progress-steps {
+    display: none; /* Hide step labels on mobile */
+  }
+  
+  .onboarding-content {
+    padding: 1rem;
+  }
+  
+  .form-grid-2,
+  .form-grid-3 {
+    grid-template-columns: 1fr;
+  }
+  
+  .onboarding-footer {
+    padding: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  #prev-btn,
+  #next-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .hero {
+    padding: 6rem 1rem 3rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .platform-tabs {
+    grid-template-columns: 1fr;
+  }
+
+  .tab-btn {
+    padding: 0.75rem 1rem;
+  }
+}
+
+/* Focus States for Accessibility */
+*:focus {
+  outline: 2px solid var(--electric-teal);
+  outline-offset: 2px;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 212, 170, 0.3);
+}
+
+/* Additional Onboarding Enhancements */
+.onboarding-form input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--electric-teal);
+}
+
+.file-upload-area input[type="file"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.budget-allocation-visual {
+  display: flex;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 1rem;
+  background: rgba(196, 200, 204, 0.2);
+}
+
+.allocation-segment {
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+.segment-preventive { background: var(--electric-teal); }
+.segment-reactive { background: var(--blue-accent); }
+.segment-capital { background: var(--warning-orange); }
+.segment-emergency { background: var(--error-red); }
+  
+.metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+
+.chart-container { max-width: 300px !important; }
+.calendar { border-collapse: collapse; width: auto; margin-top: 10px; }
+.calendar th, .calendar td { border: 1px solid #ccc; padding: 4px; font-size: 0.8rem; }
+
+/* Work Order System Styles */
+.wo-section { margin: 30px 0; border-top: 2px solid #ccc; padding-top: 20px; }
+.wo-form label { display: block; margin: 8px 0 4px; }
+.wo-form input, .wo-form select, .wo-form textarea { width: 100%; padding: 6px; margin-bottom: 12px; }
+.wo-form button { background-color: var(--ffm-secondary); color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; }
+.wo-list table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+.wo-list th, .wo-list td { border: 1px solid #ddd; padding: 6px; font-size: 0.9rem; }
+.wo-list button { padding: 4px 8px; font-size: 0.8rem; }
+
+/* Resize portal logos for space savings */
+.portal-logo .logo-main {
+  transform: scale(0.7);
+  transform-origin: top left;
+  margin-right: 10px;
+}
+
+/* Portal logo styling */
+.portal-logo {
+  margin-right: 10px;
+}
+.portal-logo .logo-main {
+  transform: scale(0.7);
+  transform-origin: top left;
+}
+/* Chart.js default text color */
+
+/* Position portal logo top-left in both portals */
+#client-portal header, #vendor-portal header {
+  position: relative;
+  padding-left: 120px; /* space for logo */
+}
+#client-portal header .portal-logo,
+#vendor-portal header .portal-logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transform: scale(0.7);
+  transform-origin: top left;
+}
+#client-portal header .portal-logo:hover,
+#vendor-portal header .portal-logo:hover {
+  transform: scale(0.7);
+}
+
+/* Position portal logo at top-left corner */
+#client-portal header, #vendor-portal header {
+  position: relative;
+  padding-left: 0; /* remove extra padding */
+}
+#client-portal header .portal-logo,
+#vendor-portal header .portal-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(0.7);
+  transform-origin: top left;
+  margin: 10px;
+}
+
+/* Adjust client portal header padding to accommodate logo */
+#client-portal header {
+  padding-left: 160px !important;
+}
+/* Position logo top-left without margin */
+#client-portal header .portal-logo {
+  top: 0 !important;
+  left: 0 !important;
+  margin: 0 !important;
+}
+/* Ensure logo does not shift on hover */
+#client-portal header .portal-logo:hover {
+  transform: scale(0.7) !important;
+}
+/* Adjust header title to not overlap logo */
+#client-portal header h1 {
+  margin-left: 10px;
+}
+
+/* Adjust vendor portal header padding to accommodate logo */
+#vendor-portal header {
+  position: relative;
+  padding-left: 160px !important;
+}
+/* Position logo top-left without margin */
+#vendor-portal header .portal-logo {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  margin: 0 !important;
+  transform: scale(0.7) !important;
+  transform-origin: top left;
+}
+/* Prevent logo shift on hover */
+#vendor-portal header .portal-logo:hover {
+  transform: scale(0.7) !important;
+}
+/* Adjust header title to not overlap logo */
+#vendor-portal header h1 {
+  margin-left: 10px;
+}
+
+/* Portal logo consistent placement */
+#vendor-portal header {
+  position: relative;
+  padding-left: 160px !important;
+}
+#vendor-portal header .portal-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(0.7);
+  transform-origin: top left;
+}
+
+/* Style Trade select and Description textarea with dark navy and white text */
+#client-portal .wo-form select#wo-trade,
+#client-portal .wo-form textarea#wo-desc {
+  background-color: var(--ffm-primary) !important;
+  color: white !important;
+  border: 1px solid white !important;
+}
+/* Labels for Trade and Description fields */
+#client-portal .wo-form label[for="wo-trade"],
+#client-portal .wo-form label[for="wo-desc"] {
+  color: white !important;
+}
+
+/* Style the file upload button to match landing page green primary button */
+#client-portal .wo-form input[type="file"]#wo-files {
+  width: auto !important; /* shrink to button only */
+}
+/* Webkit */
+#client-portal .wo-form input[type="file"]#wo-files::-webkit-file-upload-button {
+  background: linear-gradient(135deg, var(--electric-teal), var(--electric-teal-dark));
+  color: var(--dark-navy);
+  box-shadow: 0 4px 15px rgba(0, 212, 170, 0.3);
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+/* Firefox */
+#client-portal .wo-form input[type="file"]#wo-files::-moz-file-upload-button {
+  background: linear-gradient(135deg, var(--electric-teal), var(--electric-teal-dark));
+  color: var(--dark-navy);
+  box-shadow: 0 4px 15px rgba(0, 212, 170, 0.3);
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+/* Custom file input buttons */
+.file-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+  position: absolute;
+  left: 0; top: 0;
+  opacity: 0;
+  width: 100%; height: 100%;
+  cursor: pointer;
+}
+.file-select-button,
+.file-name-button {
+  background-color: var(--ffm-primary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.file-select-button:hover,
+.file-name-button:hover,
+.file-select-button:focus,
+.file-name-button:focus {
+  background-color: green;
+}
+.file-name-button[disabled] {
+  opacity: 0.8;
+}
+
+/* Add active state and border to file input buttons */
+.file-select-button,
+.file-name-button {
+  border: 1px solid green !important;
+}
+.file-select-button:hover,
+.file-name-button:hover,
+.file-select-button:focus,
+.file-name-button:focus,
+.file-select-button:active,
+.file-name-button:active {
+  background-color: green !important;
+}
+
+/* Spread file select, file name, and submit buttons evenly */
+.file-input-wrapper {
+  display: flex !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+}
+.file-input-wrapper button {
+  flex: 1 1 auto !important;
+  margin: 0 5px !important;
+}
+/* Ensure submit button inside wrapper also turns green on hover/click */
+.file-input-wrapper button:hover,
+.file-input-wrapper button:focus,
+.file-input-wrapper button:active {
+  background-color: green !important;
+}
+
+/* Make file-wrapper buttons smaller and add border */
+.file-input-wrapper button {
+  padding: 4px 8px !important;
+  font-size: 0.8rem !important;
+  border: 1px solid green !important;
+}
+/* Consistent hover/active/focus on all wrapper buttons */
+.file-input-wrapper button:hover,
+.file-input-wrapper button:focus,
+.file-input-wrapper button:active {
+  background-color: green !important;
+  color: white !important;
+  border-color: green !important;
+}
+/* Ensure file-name button is not disabled to allow hover */
+.file-input-wrapper .file-name-button {
+  disabled: false;
+  opacity: 1 !important;
+}
+
+/* Refine file input buttons: smaller size and consistent green hover */
+.file-select-button,
+.file-name-button {
+  padding: 2px 8px !important;
+  font-size: 0.75rem !important;
+  background-color: var(--ffm-primary) !important; /* navy default */
+  border: 1px solid green !important;
+  color: white !important;
+}
+.file-select-button:hover,
+.file-select-button:focus,
+.file-select-button:active,
+.file-name-button:hover,
+.file-name-button:focus,
+.file-name-button:active {
+  background-color: green !important;
+  border-color: green !important;
+  color: white !important;
+}
+
+
+
+/* Explicit hover/focus/active for file-select-button */
+.file-select-button:hover,
+.file-select-button:focus,
+.file-select-button:active {
+  background-color: green !important;
+  border-color: green !important;
+  color: white !important;
+}
+/* Explicit hover/focus/active for file-name-button */
+.file-name-button:hover,
+.file-name-button:focus,
+.file-name-button:active {
+  background-color: green !important;
+  border-color: green !important;
+  color: white !important;
+}
+/* Explicit hover/focus/active for submit button */
+.file-input-wrapper button[type="submit"]:hover,
+.file-input-wrapper button[type="submit"]:focus,
+.file-input-wrapper button[type="submit"]:active {
+  background-color: green !important;
+  border-color: green !important;
+  color: white !important;
+}
+
+/* Make buttons smaller and spread evenly */
+.file-input-wrapper {
+  display: flex !important;
+  justify-content: space-around !important;
+  width: auto !important;
+  gap: 8px !important;
+}
+.file-input-wrapper button {
+  padding: 2px 6px !important;
+  font-size: 0.75rem !important;
+  flex: none !important;
+}
+
+/* Style Vendor Category select consistent with other fields */
+#wo-vendor-category {
+  background-color: var(--ffm-primary) !important;
+  color: white !important;
+  border: 1px solid white !important;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 4px 8px !important;
+}
+/* Ensure options text is black for readability */
+#wo-vendor-category option {
+  color: black !important;
+}
+#wo-vendor-category optgroup {
+  color: white !important;
+}
+
+/* Style Vendor Category dropdown for bold larger main categories and indented sub-categories */
+#wo-vendor-category optgroup {
+  font-weight: bold !important;
+  font-size: 1rem !important;
+}
+#wo-vendor-category option {
+  font-weight: normal !important;
+  font-size: 0.875rem !important;
+  padding-left: 15px !important;
+}
+
+/* Style main categories (optgroup labels) */
+#wo-vendor-category optgroup {
+  font-weight: bold !important;
+  font-size: 1.1rem !important;
+  color: black !important;
+}
+/* Indent sub-categories */
+#wo-vendor-category option {
+  text-indent: 1.5em !important;
+  font-size: 0.9rem !important;
+  color: black !important;
+}
+
+.wo-controls { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+#wo-urgency-level { background-color: var(--dark-navy); color: white; border: 1px solid white; padding: 4px 8px; }
+#wo-urgency-level option { background-color: var(--dark-navy); color: white; }
+</style>
+<style>
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 4rem;
+    }
+  </style>
+<style>
+  /* Hide existing auth/login modals and backdrops */
+  .modal, .modal-backdrop, [id*="login"], [class*="login"] { display: none !important; }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script><script>
+Chart.defaults.scale.ticks.color = 'white';
+Chart.defaults.plugins.legend.labels.color = 'white';
+</script>
+<script>
+  function showPortal(type) {
+    document.getElementById('landing-content').style.display = 'none';
+    document.getElementById(type + '-portal').style.display = 'block';
+    if(type === 'client') renderClientCharts();
+    if(type === 'vendor') renderVendorCharts();
+  }
+  function hidePortals() {
+    document.getElementById('client-portal').style.display = 'none';
+    document.getElementById('vendor-portal').style.display = 'none';
+    document.getElementById('landing-content').style.display = 'block';
+  }
+  // Chart rendering stubs will be injected later
+</script>
+<style>
+  /* Locked dropdown styling */
+  #wo-vendor-category,
+  #wo-vendor-category option,
+  #wo-vendor-category optgroup {
+    background-color: var(--dark-navy) !important;
+    color: white !important;
+  }
+  #wo-vendor-category {
+    border: 1px solid white !important;
+  }
+</style>
+</head>
+<body>
+<div id="landing-content">
+<!-- Header -->
+<header class="header">
+<div class="container">
+<div class="logo">
+<div class="logo-main">
+<div class="logo-ffm">FFM</div>
+<div class="logo-chevron"></div>
+<div class="logo-subtitle">FRACTIONAL FACILITIES<br/>MANAGEMENT</div>
+</div>
+</div>
+<nav class="nav">
+<a href="#value-props">Services</a>
+<a href="#platform-preview">Platform</a>
+<a href="#testimonials">Success Stories</a>
+<a href="#cost-calculator">ROI Calculator</a>
+<a href="#faq-section">FAQ</a>
+<a href="#contact">Contact</a>
+<button class="btn btn-header" onclick="showPortal('client')">Client Portal</button>
+<button class="btn btn-header btn-vendor" onclick="showPortal('vendor')">Vendor Portal</button>
+</nav>
+<button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+<i class="fas fa-bars"></i>
+</button>
+</div>
+</header>
+<!-- Mobile Navigation -->
+<div class="mobile-overlay" onclick="closeMobileMenu()"></div>
+<nav class="mobile-nav">
+<a href="#value-props" onclick="closeMobileMenu()">Services</a>
+<a href="#platform-preview" onclick="closeMobileMenu()">Platform</a>
+<a href="#testimonials" onclick="closeMobileMenu()">Success Stories</a>
+<a href="#cost-calculator" onclick="closeMobileMenu()">ROI Calculator</a>
+<a href="#faq-section" onclick="closeMobileMenu()">FAQ</a>
+<a href="#contact" onclick="closeMobileMenu()">Contact</a>
+</nav>
+<!-- Hero Section -->
+<section class="hero">
+<div class="container">
+<div class="hero-content">
+<div class="hero-logo">
+<div class="logo-ffm hero-logo-text">FFM</div>
+<div class="logo-chevron hero-chevron"></div>
+<div class="logo-subtitle hero-subtitle">FRACTIONAL FACILITIES<br/>MANAGEMENT</div>
+</div>
+<h1 class="hero-title">Facilities Management.<br/>Flat Fee. Maximum Value.</h1>
+<p class="hero-subtitle">Transform your facility management with our transparent pricing, pre-vetted vendor network, and smart budget oversight. Join 500+ properties saving an average of 30% annually.</p>
+<div class="cta-buttons">
+
+
+<button class="btn btn-outline" onclick="demoMock()">
+<i class="fas fa-play"></i> Live Demo
+          </button>
+<button class="btn btn-outline" onclick="startOnboarding()">
+<i class="fas fa-rocket"></i> Client Onboarding
+          </button>
+<button class="btn btn-outline" onclick="startVendorOnboarding()">
+<i class="fas fa-briefcase"></i> Vendor Onboarding
+          </button>
+</div>
+<!-- Trust Indicators -->
+<div class="trust-indicators">
+<div class="trust-item">
+<i class="fas fa-shield-alt"></i>
+<span>$50M+ Protected in Escrow</span>
+</div>
+<div class="trust-item">
+<i class="fas fa-award"></i>
+<span>98% Client Retention Rate</span>
+</div>
+<div class="trust-item">
+<i class="fas fa-clock"></i>
+<span>24/7 Emergency Response</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Real-Time Stats Banner -->
+<section class="stats-banner">
+<div class="container">
+<div class="stats-grid">
+<div class="stat-item">
+<span class="stat-number" id="stat-properties">500+</span>
+<span class="stat-label">Properties Managed</span>
+</div>
+<div class="stat-item">
+<span class="stat-number" id="stat-projects">2,400+</span>
+<span class="stat-label">Projects Completed</span>
+</div>
+<div class="stat-item">
+<span class="stat-number" id="stat-savings">$50M+</span>
+<span class="stat-label">Client Savings Generated</span>
+</div>
+<div class="stat-item">
+<span class="stat-number" id="stat-vendors">750+</span>
+<span class="stat-label">Vetted Vendors</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Cost Calculator -->
+<section class="cost-calculator" id="cost-calculator">
+<div class="container">
+<h2>Calculate Your Potential Savings</h2>
+<p class="section-subtitle">See how much you could save with our flat-fee model</p>
+<div class="calculator-card">
+<form class="calculator-form" id="calculator-form" novalidate="">
+<div class="form-row">
+<div class="form-group">
+<label for="sqft">Total Square Footage</label>
+<input id="sqft" placeholder="e.g., 50,000" type="number"/>
+</div>
+<div class="form-group">
+<label for="current-spend">Current Annual Spend</label>
+<input id="current-spend" placeholder="e.g., $120,000" type="number"/>
+</div>
+<div class="form-group">
+<label for="facility-type">Facility Type</label>
+<select id="facility-type">
+<option value="">Select Type</option>
+<option value="office">Office Building</option>
+<option value="warehouse">Warehouse/Distribution</option>
+<option value="retail">Retail Space</option>
+<option value="manufacturing">Manufacturing</option>
+<option value="healthcare">Healthcare Facility</option>
+<option value="mixed">Mixed Use</option>
+</select>
+</div>
+<button class="btn btn-primary calc-btn" type="submit">
+<i class="fas fa-calculator"></i> Calculate Savings
+            </button>
+</div>
+</form>
+<div class="calc-results" id="calc-results"></div>
+</div>
+</div>
+</section>
+<!-- Platform Preview -->
+<section class="platform-preview" id="platform-preview">
+<div class="container">
+<h2>Your Command Center for Facilities Management</h2>
+<p class="section-subtitle">Real-time visibility into every aspect of your facility operations</p>
+<div class="platform-tabs">
+<button class="tab-btn active" data-tab="dashboard">Dashboard Overview</button>
+<button class="tab-btn" data-tab="projects">Project Tracking</button>
+<button class="tab-btn" data-tab="vendors">Vendor Network</button>
+<button class="tab-btn" data-tab="budget">Budget Management</button>
+</div>
+<div class="tab-content active" id="dashboard">
+<div class="demo-interface">
+<div class="demo-header">
+<h4><i class="fas fa-tachometer-alt"></i> Real-Time Dashboard</h4>
+<div class="demo-metrics">
+<div class="metric">
+<span class="metric-value">$42,350</span>
+<span class="metric-label">Budget Remaining</span>
+</div>
+<div class="metric">
+<span class="metric-value">8</span>
+<span class="metric-label">Active Projects</span>
+</div>
+<div class="metric">
+<span class="metric-value">98%</span>
+<span class="metric-label">On-Time Completion</span>
+</div>
+</div>
+</div>
+<div class="demo-features">
+<div class="feature-list">
+<div class="feature-item">
+<i class="fas fa-chart-line"></i>
+<span>Real-time budget tracking with alerts</span>
+</div>
+<div class="feature-item">
+<i class="fas fa-bell"></i>
+<span>Automated maintenance scheduling</span>
+</div>
+<div class="feature-item">
+<i class="fas fa-mobile-alt"></i>
+<span>Mobile app for instant updates</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tab-content" id="projects">
+<div class="demo-interface">
+<div class="demo-header">
+<h4><i class="fas fa-tasks"></i> Project Management Hub</h4>
+</div>
+<div class="project-list">
+<div class="project-item">
+<div class="project-info">
+<h5>HVAC Maintenance - Building A</h5>
+<p>Vendor: Arctic Air Solutions | Due: Tomorrow</p>
+</div>
+<div class="project-status">
+<span class="status-badge in-progress">In Progress</span>
+<span class="progress-bar">
+<span class="progress-fill" style="width: 75%"></span>
+</span>
+</div>
+</div>
+<div class="project-item">
+<div class="project-info">
+<h5>Elevator Inspection - All Floors</h5>
+<p>Vendor: SafeLift Services | Due: Next Week</p>
+</div>
+<div class="project-status">
+<span class="status-badge scheduled">Scheduled</span>
+<span class="progress-bar">
+<span class="progress-fill" style="width: 25%"></span>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tab-content" id="vendors">
+<div class="demo-interface">
+<div class="demo-header">
+<h4><i class="fas fa-users"></i> Vendor Network Management</h4>
+</div>
+<div class="vendor-grid">
+<div class="vendor-card">
+<div class="vendor-rating">
+<span class="rating">4.9</span>
+<div class="stars">★★★★★</div>
+</div>
+<h5>Elite HVAC Services</h5>
+<p>Licensed, Insured, 15+ years experience</p>
+<div class="vendor-stats">
+<span>98% On-Time | 24/7 Emergency</span>
+</div>
+</div>
+<div class="vendor-card">
+<div class="vendor-rating">
+<span class="rating">4.8</span>
+<div class="stars">★★★★★</div>
+</div>
+<h5>ProClean Facilities</h5>
+<p>Commercial cleaning specialists</p>
+<div class="vendor-stats">
+<span>100% Satisfaction | Eco-Friendly</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tab-content" id="budget">
+<div class="demo-interface">
+<div class="demo-header">
+<h4><i class="fas fa-shield-alt"></i> Smart Escrow &amp; Budget Protection</h4>
+</div>
+<div class="budget-overview">
+<div class="budget-chart">
+<div class="chart-placeholder">
+<i class="fas fa-chart-pie"></i>
+<p>Interactive Budget Breakdown</p>
+</div>
+</div>
+<div class="budget-features">
+<div class="feature-item">
+<i class="fas fa-lock"></i>
+<span>Funds held in escrow until completion</span>
+</div>
+<div class="feature-item">
+<i class="fas fa-eye"></i>
+<span>Complete cost transparency</span>
+</div>
+<div class="feature-item">
+<i class="fas fa-alarm-clock"></i>
+<span>Real-time spending alerts</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Value Propositions -->
+<section class="value-props" id="value-props">
+<div class="container">
+<h2>Why Leading Facilities Choose FFM</h2>
+<div class="props-grid">
+<div class="prop-card">
+<div class="prop-icon">
+<i class="fas fa-dollar-sign"></i>
+</div>
+<h3>Transparent Flat-Fee Model</h3>
+<p>Predictable monthly costs with zero hidden fees. Our clients save an average of 30% compared to traditional FM companies.</p>
+<div class="prop-benefits">
+<span>✓ No markup on vendor services</span>
+<span>✓ Fixed monthly pricing</span>
+<span>✓ Complete cost breakdown</span>
+</div>
+</div>
+<div class="prop-card">
+<div class="prop-icon">
+<i class="fas fa-shield-alt"></i>
+</div>
+<h3>Pre-Vetted Vendor Ecosystem</h3>
+<p>Access our network of 750+ thoroughly screened, licensed, and continuously monitored service professionals.</p>
+<div class="prop-benefits">
+<span>✓ Rigorous 12-point vetting process</span>
+<span>✓ Ongoing performance monitoring</span>
+<span>✓ 24/7 emergency response network</span>
+</div>
+</div>
+<div class="prop-card">
+<div class="prop-icon">
+<i class="fas fa-chart-line"></i>
+</div>
+<h3>Smart Escrow &amp; Protection</h3>
+<p>Revolutionary escrow system protects your investment with milestone-based payments and quality guarantees.</p>
+<div class="prop-benefits">
+<span>✓ Funds protected until completion</span>
+<span>✓ Quality assurance built-in</span>
+<span>✓ Dispute resolution support</span>
+</div>
+</div>
+<div class="prop-card">
+<div class="prop-icon">
+<i class="fas fa-brain"></i>
+</div>
+<h3>AI-Powered Optimization</h3>
+<p>Machine learning algorithms optimize vendor selection, predict maintenance needs, and reduce costs automatically.</p>
+<div class="prop-benefits">
+<span>✓ Predictive maintenance alerts</span>
+<span>✓ Intelligent vendor matching</span>
+<span>✓ Cost optimization recommendations</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Client Success Stories & Testimonials -->
+<section class="testimonials" id="testimonials">
+<div class="container">
+<h2>Success Stories from Our Clients</h2>
+<div class="testimonials-carousel">
+<div class="testimonial-track">
+<div class="testimonial-slide active">
+<div class="testimonial-card">
+<div class="testimonial-content">
+<div class="quote-icon">
+<i class="fas fa-quote-left"></i>
+</div>
+<p>"FFM transformed our facility management completely. We've saved over $180,000 in the first year alone, and the quality of service has never been better. Their vendor network is exceptional."</p>
+<div class="testimonial-author">
+<div class="author-info">
+<h4>Sarah Johnson</h4>
+<span>VP Operations, Metro Distribution</span>
+<div class="company-size">500,000 sq ft | Industrial</div>
+</div>
+<div class="savings-badge">
+<span>Saved $180K</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="testimonial-slide">
+<div class="testimonial-card">
+<div class="testimonial-content">
+<div class="quote-icon">
+<i class="fas fa-quote-left"></i>
+</div>
+<p>"The platform gives us complete visibility into all our facilities. Real-time tracking, budget management, and vendor performance - everything we need in one place. Game changer for our operations."</p>
+<div class="testimonial-author">
+<div class="author-info">
+<h4>Michael Chen</h4>
+<span>Facilities Director, TechCorp</span>
+<div class="company-size">1.2M sq ft | Office Complex</div>
+</div>
+<div class="savings-badge">
+<span>Saved $340K</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="testimonial-slide">
+<div class="testimonial-card">
+<div class="testimonial-content">
+<div class="quote-icon">
+<i class="fas fa-quote-left"></i>
+</div>
+<p>"Working with FFM has streamlined our entire workflow. The quality of vendors is consistently high, payments are seamless, and we've expanded to serve three new markets through their platform."</p>
+<div class="testimonial-author">
+<div class="author-info">
+<h4>Rodriguez HVAC Solutions</h4>
+<span>Premium Vendor Partner</span>
+<div class="company-size">15+ years experience</div>
+</div>
+<div class="vendor-badge">
+<span>Top Rated</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="carousel-controls">
+<button class="carousel-btn prev" onclick="previousTestimonial()" type="button">
+<i class="fas fa-chevron-left"></i>
+</button>
+<button class="carousel-btn next" onclick="nextTestimonial()" type="button">
+<i class="fas fa-chevron-right"></i>
+</button>
+</div>
+<div class="carousel-dots">
+<span class="dot active" onclick="currentTestimonial(1)"></span>
+<span class="dot" onclick="currentTestimonial(2)"></span>
+<span class="dot" onclick="currentTestimonial(3)"></span>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive FAQ Section -->
+<section class="faq-section" id="faq-section">
+<div class="container">
+<h2>Frequently Asked Questions</h2>
+<div class="faq-grid">
+<div class="faq-item">
+<div class="faq-question" onclick="toggleFAQ(this)">
+<h3>How does the flat-fee model work?</h3>
+<i class="fas fa-plus"></i>
+</div>
+<div class="faq-answer">
+<p>Our flat-fee model provides complete cost transparency and predictability. Based on your facility size, complexity, and service requirements, we provide a fixed monthly fee that covers all management services. This includes vendor coordination, project management, emergency response, reporting, and our technology platform. No hidden costs, no surprise charges, no markup on vendor services.</p>
+</div>
+</div>
+<div class="faq-item">
+<div class="faq-question" onclick="toggleFAQ(this)">
+<h3>What makes your vendor network special?</h3>
+<i class="fas fa-plus"></i>
+</div>
+<div class="faq-answer">
+<p>Every vendor in our network undergoes rigorous vetting including license verification, insurance validation, background checks, and performance testing. We maintain ongoing relationships with over 750 certified professionals nationwide, continuously monitoring their performance through client feedback and quality audits. This ensures you always get reliable, high-quality service from trusted professionals.</p>
+</div>
+</div>
+<div class="faq-item">
+<div class="faq-question" onclick="toggleFAQ(this)">
+<h3>How does the escrow system protect my investments?</h3>
+<i class="fas fa-plus"></i>
+</div>
+<div class="faq-answer">
+<p>Our smart escrow system holds project funds until work is completed to your satisfaction. Vendors are paid only after project completion and your approval. This ensures quality workmanship, protects your budget, and provides leverage for addressing any issues. You maintain complete control over fund release while we handle all vendor coordination and project management.</p>
+</div>
+</div>
+<div class="faq-item">
+<div class="faq-question" onclick="toggleFAQ(this)">
+<h3>What types of facilities do you serve?</h3>
+<i class="fas fa-plus"></i>
+</div>
+<div class="faq-answer">
+<p>We provide fractional facilities management services for all types of commercial and industrial facilities including office buildings, retail spaces, manufacturing facilities, warehouses, healthcare facilities, educational institutions, and mixed-use developments. Our vendor network and flat-fee model scales from single-building operations to multi-site portfolios.</p>
+</div>
+</div>
+<div class="faq-item">
+<div class="faq-question" onclick="toggleFAQ(this)">
+<h3>How quickly can you respond to emergencies?</h3>
+<i class="fas fa-plus"></i>
+</div>
+<div class="faq-answer">
+<p>We provide 24/7 emergency response with guaranteed response times based on your service level agreement. Critical emergencies (safety, security, major system failures) receive immediate response within 30 minutes. Urgent issues are addressed within 2 hours, and standard requests within 4-8 hours. Our dispatch system automatically routes requests to the nearest qualified vendor in our network.</p>
+</div>
+</div>
+<div class="faq-item">
+<div class="faq-question" onclick="toggleFAQ(this)">
+<h3>Can I track projects and expenses in real-time?</h3>
+<i class="fas fa-plus"></i>
+</div>
+<div class="faq-answer">
+<p>Yes, our proprietary platform provides real-time project tracking, budget monitoring, and comprehensive reporting. You can view project status, vendor performance, expense tracking, and detailed analytics through our client portal or mobile app. Automated notifications keep you informed of project milestones, budget utilization, and any issues requiring attention.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter Section -->
+<section class="newsletter">
+<div class="container">
+<div class="newsletter-content">
+<div class="newsletter-text">
+<h2>Stay Informed</h2>
+<p>Get updates on fractional facilities management, vendor network enhancements, cost optimization strategies, and FFM platform improvements delivered to your inbox.</p>
+</div>
+<form class="newsletter-form" id="newsletter-form" novalidate="">
+<input id="newsletter-email" placeholder="Your work email" type="email"/>
+<button class="btn btn-primary" type="submit">Subscribe</button>
+</form>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="footer">
+<div class="container">
+<div class="footer-content">
+<div class="footer-section">
+<h3>FFM</h3>
+<p>Fractional Facilities Management</p>
+<div class="social-links">
+<a href="#"><i class="fab fa-linkedin"></i></a>
+<a href="#"><i class="fab fa-twitter"></i></a>
+<a href="#"><i class="fab fa-facebook"></i></a>
+</div>
+</div>
+<div class="footer-section" id="contact">
+<h4>Contact Info</h4>
+<p><i class="fas fa-phone"></i> (555) 123-4567</p>
+<p><i class="fas fa-envelope"></i> info@ffm-platform.com</p>
+<p><i class="fas fa-map-marker-alt"></i> 123 Business Ave, Suite 100<br/>Oklahoma City, OK 73102</p>
+</div>
+<div class="footer-section">
+<h4>Quick Links</h4>
+<a href="#privacy">Privacy Policy</a>
+<a href="#terms">Terms of Service</a>
+<a href="#faq">FAQ</a>
+<a href="#support">Support</a>
+</div>
+<div class="footer-section">
+<h4>Get Started</h4>
+<button class="btn btn-outline footer-cta" onclick="demoMock()">
+            Schedule Demo
+          </button>
+<button class="btn btn-outline footer-cta" onclick="rfpMock()">
+            Submit RFP
+          </button>
+<button class="btn btn-outline footer-cta" onclick="startOnboarding()">
+            Client Onboarding
+          </button>
+<button class="btn btn-outline footer-cta" onclick="startVendorOnboarding()">
+<i class="fas fa-briefcase"></i> Vendor Onboarding
+          </button>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2024 Fractional Facilities Management. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<!-- Back to Top Button -->
+<button class="back-to-top" id="backToTop" onclick="scrollToTop()" style="display: flex;">
+<i class="fas fa-arrow-up"></i>
+</button>
+<!-- Modals -->
+<div class="modal-overlay" id="modal-overlay" onclick="closeModal()">
+<div class="modal" onclick="event.stopPropagation()">
+<div class="modal-header">
+<h3 id="modal-title">Modal Title</h3>
+<button class="modal-close" onclick="closeModal()">×</button>
+</div>
+<div class="modal-body" id="modal-body">
+<!-- Modal content will be inserted here -->
+</div>
+</div>
+</div>
+</div>
+<!-- Client Onboarding Modal -->
+<!-- Integrated Client & Vendor Portals -->
+<div id="client-portal" style="display:none;">
+<header>
+<div class="portal-logo">
+<div class="logo-main">
+<div class="logo-ffm">FFM</div>
+<div class="logo-chevron"></div>
+<div class="logo-subtitle">FRACTIONAL FACILITIES<br/>MANAGEMENT</div>
+</div>
+</div>
+<h1>Client Portal Dashboard</h1>
+<button class="btn btn-close btn btn-primary" onclick="hidePortals()">Home</button>
+</header>
+<div class="container">
+<!-- Client sections from steps 5 & 6 -->
+<section class="section"><h2>Multi-Property Overview</h2><table><thead><tr><th>Property</th><th>Status</th></tr></thead><tbody><tr><td>Warehouse A</td><td>Active</td></tr><tr><td>Office B</td><td>Active</td></tr><tr><td>Retail C</td><td>Maintenance</td></tr></tbody></table></section>
+<section class="section"><h2>PM Calendar</h2><table class="calendar"><thead><tr><th>Mon 7/7</th><th>Tue 7/8</th><th>Wed 7/9</th><th>Thu 7/10</th><th>Fri 7/11</th></tr></thead><tbody><tr><td>Inspection</td><td>Preventive Maint</td><td>Inspection</td><td>Repair</td><td>PM Scheduled</td></tr></tbody></table></section>
+<section class="section"><h2>Work Order Management</h2><table><thead><tr><th>ID</th><th>Type</th><th>Status</th></tr></thead><tbody><tr><td>45</td><td>Repair</td><td>Open</td></tr><tr><td>46</td><td>Inspection</td><td>Closed</td></tr></tbody></table></section>
+<section class="section chart-container"><h2>Escrow Account Visuals</h2><canvas id="chart-escrow"></canvas></section>
+<section class="section chart-container"><h2>Budget vs Actual (R&amp;M)</h2><canvas id="chart-budget-actual"></canvas></section>
+<section class="section"><h2>File Library</h2><ul><li>Lease_Doc.pdf</li><li>Warranty_Info.docx</li></ul></section>
+<section class="section"><h2>Emergency Contacts</h2><ul><li>John Doe - 555-1234</li><li>Jane Smith - 555-5678</li></ul></section>
+<section class="section"><h2>Capital Project Planner</h2><ul><li>Roof Replacement - Q3 2025</li><li>HVAC Upgrade - Q4 2025</li></ul></section>
+<section class="section chart-container"><h2>Open vs Closed Work Orders</h2><canvas id="chart-open-closed"></canvas></section>
+<section class="section chart-container"><h2>Avg Response Time (hrs)</h2><canvas id="chart-response-time"></canvas></section>
+<section class="section chart-container"><h2>PM Compliance Rate (%)</h2><canvas id="chart-compliance"></canvas></section>
+<section class="section chart-container"><h2>Vendor Performance Scores</h2><canvas id="chart-vendor-perf"></canvas></section>
+<section class="section"><h2>Secure Messaging &amp; Activity Log</h2><ul><li>2025-07-01: Work order #45 closed</li><li>2025-06-28: Message to Vendor XYZ</li></ul></section>
+<div class="wo-section" id="workorder-section">
+<h2>Work Order System</h2>
+<form class="wo-form" id="wo-form"><div class="wo-controls"><label for="wo-vendor-category">Vendor Category</label><select id="wo-vendor-category" required=""><optgroup label="Mechanical &amp; HVAC"><option value="Heating, Ventilation &amp; Air Conditioning">Heating, Ventilation &amp; Air Conditioning</option><option value="Boiler service &amp; repair">Boiler service &amp; repair</option><option value="Chiller maintenance">Chiller maintenance</option><option value="Refrigeration systems">Refrigeration systems</option></optgroup><optgroup label="Plumbing &amp; Water Systems"><option value="Domestic plumbing">Domestic plumbing</option><option value="Sewer &amp; drainage">Sewer &amp; drainage</option><option value="Backflow testing &amp; certification">Backflow testing &amp; certification</option><option value="Water treatment &amp; softening">Water treatment &amp; softening</option></optgroup><optgroup label="Electrical &amp; Lighting"><option value="General electrical contractors">General electrical contractors</option><option value="Emergency generator service">Emergency generator service</option><option value="Interior/exterior lighting">Interior/exterior lighting</option><option value="Low-voltage systems (data, telecom, fire alarm)">Low-voltage systems (data, telecom, fire alarm)</option></optgroup><optgroup label="Roofing &amp; Waterproofing"><option value="Roof inspections &amp; repairs">Roof inspections &amp; repairs</option><option value="Waterproofing &amp; sealants">Waterproofing &amp; sealants</option><option value="Gutter &amp; downspout maintenance">Gutter &amp; downspout maintenance</option><option value="Flat roof membrane service">Flat roof membrane service</option></optgroup><optgroup label="Interior Finishes"><option value="Painting &amp; wall covering">Painting &amp; wall covering</option><option value="Flooring (tile, carpet, vinyl, epoxy)">Flooring (tile, carpet, vinyl, epoxy)</option><option value="Ceilings &amp; drywall repair">Ceilings &amp; drywall repair</option><option value="Millwork &amp; carpentry">Millwork &amp; carpentry</option></optgroup><optgroup label="Grounds &amp; Site Services"><option value="Landscaping &amp; irrigation">Landscaping &amp; irrigation</option><option value="Tree trimming &amp; removal">Tree trimming &amp; removal</option><option value="Parking lot maintenance &amp; striping">Parking lot maintenance &amp; striping</option><option value="Snow removal &amp; de-icing">Snow removal &amp; de-icing</option></optgroup><optgroup label="Structural &amp; Exterior"><option value="Masonry &amp; concrete">Masonry &amp; concrete</option><option value="Façade &amp; cladding repair">Façade &amp; cladding repair</option><option value="Window/glass replacement">Window/glass replacement</option><option value="Exterior painting &amp; coatings">Exterior painting &amp; coatings</option></optgroup><optgroup label="Janitorial &amp; Waste Management"><option value="Daily/periodic cleaning">Daily/periodic cleaning</option><option value="Window washing">Window washing</option><option value="Trash/recycling hauling">Trash/recycling hauling</option><option value="Specialty deep-cleaning (e.g., pressure washing)">Specialty deep-cleaning (e.g., pressure washing)</option></optgroup><optgroup label="Safety, Security &amp; Access"><option value="Fire alarm &amp; sprinkler systems">Fire alarm &amp; sprinkler systems</option><option value="Fire extinguisher inspection">Fire extinguisher inspection</option><option value="Security systems &amp; CCTV">Security systems &amp; CCTV</option><option value="Access control &amp; locking hardware">Access control &amp; locking hardware</option></optgroup><optgroup label="Elevators &amp; Vertical Transport"><option value="Elevator maintenance &amp; repair">Elevator maintenance &amp; repair</option><option value="Escalator service">Escalator service</option><option value="Lift inspections &amp; code compliance">Lift inspections &amp; code compliance</option></optgroup><optgroup label="Energy Management &amp; Sustainability"><option value="Energy audits &amp; commissioning">Energy audits &amp; commissioning</option><option value="Solar PV installation &amp; maintenance">Solar PV installation &amp; maintenance</option><option value="Building automation systems (BAS)">Building automation systems (BAS)</option><option value="LED lighting retrofit">LED lighting retrofit</option></optgroup><optgroup label="Specialty Trades &amp; Equipment"><option value="Pest control">Pest control</option><option value="Asbestos/lead abatement">Asbestos/lead abatement</option><option value="Roofing snow guards &amp; fall protection">Roofing snow guards &amp; fall protection</option><option value="Testing &amp; balancing (TAB)">Testing &amp; balancing (TAB)</option></optgroup><optgroup label="IT Infrastructure &amp; Cabling"><option value="Network cabling &amp; patch panels">Network cabling &amp; patch panels</option><option value="Wireless access point installation">Wireless access point installation</option><option value="Server room cooling &amp; racks">Server room cooling &amp; racks</option></optgroup><optgroup label="Capital Project &amp; Renovation"><option value="General contracting">General contracting</option><option value="Interior fit-out &amp; build-outs">Interior fit-out &amp; build-outs</option><option value="Tenant improvements">Tenant improvements</option><option value="Specialty sub-contractors (e.g., acoustical ceilings, lab fit-outs)">Specialty sub-contractors (e.g., acoustical ceilings, lab fit-outs)</option></optgroup></select><label for="wo-urgency-level">Urgency Level</label><select id="wo-urgency-level" required=""><option value="Critical">Critical</option><option value="High">High</option><option value="Medium">Medium</option><option value="Low">Low</option></select></div>
+<label for="wo-files">Attach Files</label>
+<div class="file-input-wrapper"><button class="file-select-button" style="position: relative; overflow: hidden;" type="button">Choose File<input id="wo-files" multiple="" style="position:absolute; top:0; left:0; width:100%; height:100%; opacity:0; cursor:pointer;" type="file"/></button><button class="file-name-button" type="button">No file chosen</button><button type="submit">Submit Work Order</button></div>
+<script>
+// Custom file input button behavior
+const fileInput = document.getElementById('wo-files');
+const selectButton = document.querySelector('.file-select-button');
+const nameButton = document.querySelector('.file-name-button');
+
+if (selectButton) {
+  selectButton.addEventListener('click', () => fileInput.click());
+}
+
+if (fileInput) {
+  fileInput.addEventListener('change', () => {
+    const files = Array.from(fileInput.files).map(f => f.name).join(', ');
+    nameButton.innerText = files || 'No file chosen';
+  });
+}
+</script></form>
+<div class="wo-list" id="wo-list-client">
+<h3>Submitted Work Orders</h3>
+<table>
+<thead><tr><th>ID</th><th>Trade</th><th>Urgency</th><th>Status</th><th>Action</th></tr></thead>
+<tbody></tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div id="vendor-portal" style="display:none;">
+<header>
+<div class="portal-logo">
+<div class="logo-main">
+<div class="logo-ffm">FFM</div>
+<div class="logo-chevron"></div>
+<div class="logo-subtitle">FRACTIONAL FACILITIES<br/>MANAGEMENT</div>
+</div>
+</div>
+<h1>Vendor Portal Dashboard</h1>
+<button class="btn btn-close btn btn-primary" onclick="hidePortals()">Home</button>
+</header>
+<div class="container">
+<section class="section chart-container"><h2>Work Orders Received vs Completed</h2><canvas id="chart-workorders"></canvas></section>
+<section class="section chart-container"><h2>Bids Won vs Pending</h2><canvas id="chart-bids"></canvas></section>
+<section class="section chart-container"><h2>Average Ratings</h2><canvas id="chart-ratings"></canvas></section>
+<section class="section"><h2>Availability Calendar</h2><table class="calendar"><thead><tr><th>Mon 7/7</th><th>Tue 7/8</th><th>Wed 7/9</th><th>Thu 7/10</th><th>Fri 7/11</th></tr></thead><tbody><tr><td>Available</td><td>Busy</td><td>Available</td><td>Busy</td><td>Available</td></tr></tbody></table></section>
+<section class="section"><h2>License &amp; Document Status</h2><table><thead><tr><th>Doc</th><th>Status</th><th>Expiry</th></tr></thead><tbody><tr><td>License A</td><td>Valid</td><td>2026-01-01</td></tr><tr><td>Insurance</td><td>Valid</td><td>2025-12-15</td></tr></tbody></table></section>
+<section class="section"><h2>Bid Invitations</h2><ul><li>Project X - Pending</li><li>Project Y - Accepted</li></ul></section>
+<section class="section chart-container"><h2>On-Time Completion Metrics (%)</h2><canvas id="chart-ontime"></canvas></section>
+<section class="section"><h2>Docs Expiring Soon</h2><ul><li>License A - 2025-08-15</li><li>Doc B - 2025-09-01</li></ul></section>
+<div class="wo-section" id="vendor-wo-section">
+<h2>Assigned Work Orders</h2>
+<div class="wo-list" id="wo-list-vendor">
+<table>
+<thead><tr><th>ID</th><th>Trade</th><th>Status</th><th>Update</th></tr></thead>
+<tbody></tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="modal-overlay onboarding-modal" id="onboarding-overlay" style="display: none;">
+<div class="onboarding-container" onclick="event.stopPropagation()">
+<div class="onboarding-header">
+<div class="onboarding-logo">
+<div class="logo-ffm">FFM</div>
+<div class="logo-subtitle">CLIENT ONBOARDING</div>
+</div>
+<button class="modal-close" onclick="closeOnboarding()">×</button>
+</div>
+<div class="onboarding-progress">
+<div class="progress-bar-container">
+<div class="progress-bar-fill" id="onboarding-progress"></div>
+</div>
+<div class="progress-steps">
+<div class="step active" data-step="1">Company Info</div>
+<div class="step" data-step="2">Facility Details</div>
+<div class="step" data-step="3">Emergency Contacts</div>
+<div class="step" data-step="4">Document Uploads</div>
+<div class="step" data-step="5">Payment Setup</div>
+<div class="step" data-step="6">Budget &amp; Escrow</div>
+<div class="step" data-step="7">Team Roles</div>
+</div>
+</div>
+<div class="onboarding-content">
+<div id="onboarding-body">
+<!-- Onboarding steps will be inserted here -->
+</div>
+</div>
+<div class="onboarding-footer">
+<button class="btn btn-secondary" id="prev-btn" onclick="previousStep()" style="display: none;">
+<i class="fas fa-arrow-left"></i> Previous
+        </button>
+<div class="step-indicator">
+          Step <span id="current-step">1</span> of 7
+        </div>
+<button class="btn btn-primary" id="next-btn" onclick="nextStep()">
+          Next <i class="fas fa-arrow-right"></i>
+</button>
+</div>
+</div>
+</div>
+<script>
+
+// Enhanced Modal System
+let currentTestimonialIndex = 0;
+const testimonials = document.querySelectorAll('.testimonial-slide');
+
+// Onboarding System
+let currentOnboardingStep = 1;
+const totalOnboardingSteps = 7;
+let onboardingData = {};
+
+// Initialize when DOM loads
+document.addEventListener('DOMContentLoaded', function() {
+  initializeCalculator();
+  initializePlatformTabs();
+  initializeTestimonialCarousel();
+  initializeScrollEffects();
+  initializeAnimations();
+  initializeOnboarding();
+});
+
+// Onboarding Functions
+function initializeOnboarding() {
+  // Initialize any onboarding setup
+}
+
+function startOnboarding() {
+  currentOnboardingStep = 1;
+  onboardingData = {};
+  
+  const overlay = document.getElementById('onboarding-overlay');
+  if (!overlay) {
+    console.error('Onboarding overlay not found');
+    return;
+  }
+  
+  overlay.style.display = 'flex';
+  updateOnboardingProgress();
+  loadOnboardingStep(1);
+}
+
+function closeOnboarding() {
+  document.getElementById('onboarding-overlay').style.display = 'none';
+}
+
+function nextStep() {
+  if (validateCurrentStep()) {
+    saveStepData();
+    if (currentOnboardingStep < totalOnboardingSteps) {
+      currentOnboardingStep++;
+      updateOnboardingProgress();
+      loadOnboardingStep(currentOnboardingStep);
+    } else {
+      completeOnboarding();
+    }
+  }
+}
+
+function previousStep() {
+  if (currentOnboardingStep > 1) {
+    currentOnboardingStep--;
+    updateOnboardingProgress();
+    loadOnboardingStep(currentOnboardingStep);
+  }
+}
+
+function updateOnboardingProgress() {
+  const progress = (currentOnboardingStep / totalOnboardingSteps) * 100;
+  const progressBar = document.getElementById('onboarding-progress');
+  const currentStepSpan = document.getElementById('current-step');
+  
+  if (progressBar) {
+    progressBar.style.width = progress + '%';
+  }
+  if (currentStepSpan) {
+    currentStepSpan.textContent = currentOnboardingStep;
+  }
+  
+  // Update step indicators
+  document.querySelectorAll('.progress-steps .step').forEach((step, index) => {
+    step.classList.remove('active', 'completed');
+    if (index + 1 === currentOnboardingStep) {
+      step.classList.add('active');
+    } else if (index + 1 < currentOnboardingStep) {
+      step.classList.add('completed');
+    }
+  });
+  
+  // Update navigation buttons
+  const prevBtn = document.getElementById('prev-btn');
+  const nextBtn = document.getElementById('next-btn');
+  
+  if (prevBtn) {
+    if (currentOnboardingStep === 1) {
+      prevBtn.style.display = 'none';
+    } else {
+      prevBtn.style.display = 'flex';
+    }
+  }
+  
+  if (nextBtn) {
+    if (currentOnboardingStep === totalOnboardingSteps) {
+      nextBtn.innerHTML = '<i class="fas fa-check"></i> Complete Onboarding';
+    } else {
+      nextBtn.innerHTML = 'Next <i class="fas fa-arrow-right"></i>';
+    }
+  }
+}
+
+function loadOnboardingStep(step) {
+  const onboardingBody = document.getElementById('onboarding-body');
+  if (!onboardingBody) {
+    console.error('Onboarding body not found');
+    return;
+  }
+  
+  let content = '';
+  
+  switch(step) {
+    case 1:
+      content = getStep1Content();
+      break;
+    case 2:
+      content = getStep2Content();
+      break;
+    case 3:
+      content = getStep3Content();
+      break;
+    case 4:
+      content = getStep4Content();
+      break;
+    case 5:
+      content = getStep5Content();
+      break;
+    case 6:
+      content = getStep6Content();
+      break;
+    case 7:
+      content = getStep7Content();
+      break;
+    default:
+      content = getStep1Content();
+  }
+  
+  onboardingBody.innerHTML = content;
+  
+  // Initialize file uploads if on step 4
+  if (step === 4) {
+    setTimeout(() => initializeFileUploads(), 100);
+  }
+  
+  // Populate form fields with saved data
+  setTimeout(() => populateFormFields(step), 100);
+}
+
+function getStep1Content() {
+  return `
+    <div class="onboarding-step active">
+      <h2 class="step-title">Company & Property Information</h2>
+      <p class="step-description">Let's start by gathering basic information about your company and primary facility.</p>
+      
+      <form class="onboarding-form" novalidate>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="company-name">Company Name *</label>
+            <input type="text" id="company-name" name="companyName">
+          </div>
+          <div class="form-group">
+            <label for="primary-contact">Primary Contact *</label>
+            <input type="text" id="primary-contact" name="primaryContact">
+          </div>
+        </div>
+        
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="contact-email">Contact Email *</label>
+            <input type="email" id="contact-email" name="contactEmail">
+          </div>
+          <div class="form-group">
+            <label for="contact-phone">Contact Phone *</label>
+            <input type="tel" id="contact-phone" name="contactPhone">
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="company-address">Company Address *</label>
+          <textarea id="company-address" name="companyAddress" rows="3" placeholder="Street address, city, state, ZIP code"></textarea>
+        </div>
+        
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="industry">Industry *</label>
+            <select id="industry" name="industry">
+              <option value="">Select Industry</option>
+              <option value="office">Office/Corporate</option>
+              <option value="manufacturing">Manufacturing</option>
+              <option value="warehouse">Warehouse/Distribution</option>
+              <option value="retail">Retail</option>
+              <option value="healthcare">Healthcare</option>
+              <option value="education">Education</option>
+              <option value="hospitality">Hospitality</option>
+              <option value="mixed">Mixed Use</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="company-size">Company Size</label>
+            <select id="company-size" name="companySize">
+              <option value="">Select Size</option>
+              <option value="startup">Startup (1-10 employees)</option>
+              <option value="small">Small (11-50 employees)</option>
+              <option value="medium">Medium (51-200 employees)</option>
+              <option value="large">Large (201-1000 employees)</option>
+              <option value="enterprise">Enterprise (1000+ employees)</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="primary-facility-address">Primary Facility Address *</label>
+          <textarea id="primary-facility-address" name="primaryFacilityAddress" rows="3" placeholder="If different from company address"></textarea>
+        </div>
+      </form>
+    </div>
+  `;
+}
+
+function getStep2Content() {
+  return `
+    <div class="onboarding-step active">
+      <h2 class="step-title">Facility Details & Specifications</h2>
+      <p class="step-description">Provide detailed information about your facilities to help us understand your needs.</p>
+      
+      <form class="onboarding-form" novalidate>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="total-sqft">Total Square Footage *</label>
+            <input type="number" id="total-sqft" name="totalSqft" placeholder="e.g., 50000">
+          </div>
+          <div class="form-group">
+            <label for="number-of-floors">Number of Floors</label>
+            <input type="number" id="number-of-floors" name="numberOfFloors" placeholder="e.g., 3">
+          </div>
+        </div>
+        
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="building-age">Building Age (Years)</label>
+            <input type="number" id="building-age" name="buildingAge" placeholder="e.g., 15">
+          </div>
+          <div class="form-group">
+            <label for="operating-hours">Operating Hours</label>
+            <select id="operating-hours" name="operatingHours">
+              <option value="">Select Hours</option>
+              <option value="standard">Standard Business Hours (8-5)</option>
+              <option value="extended">Extended Hours (6-8)</option>
+              <option value="24-7">24/7 Operations</option>
+              <option value="custom">Custom Schedule</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="facility-types">Facility Type Breakdown *</label>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="office-sqft">Office Space (sq ft)</label>
+              <input type="number" id="office-sqft" name="officeSqft" placeholder="0">
+            </div>
+            <div class="form-group">
+              <label for="warehouse-sqft">Warehouse/Storage (sq ft)</label>
+              <input type="number" id="warehouse-sqft" name="warehouseSqft" placeholder="0">
+            </div>
+            <div class="form-group">
+              <label for="manufacturing-sqft">Manufacturing (sq ft)</label>
+              <input type="number" id="manufacturing-sqft" name="manufacturingSqft" placeholder="0">
+            </div>
+            <div class="form-group">
+              <label for="retail-sqft">Retail Space (sq ft)</label>
+              <input type="number" id="retail-sqft" name="retailSqft" placeholder="0">
+            </div>
+            <div class="form-group">
+              <label for="common-sqft">Common Areas (sq ft)</label>
+              <input type="number" id="common-sqft" name="commonSqft" placeholder="0">
+            </div>
+            <div class="form-group">
+              <label for="parking-sqft">Parking (sq ft)</label>
+              <input type="number" id="parking-sqft" name="parkingSqft" placeholder="0">
+            </div>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="special-requirements">Special Requirements or Features</label>
+          <textarea id="special-requirements" name="specialRequirements" rows="4" placeholder="Clean rooms, specialized HVAC, security requirements, environmental controls, etc."></textarea>
+        </div>
+        
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="hvac-type">HVAC System Type</label>
+            <select id="hvac-type" name="hvacType">
+              <option value="">Select Type</option>
+              <option value="central">Central Air/Heat</option>
+              <option value="package">Package Units</option>
+              <option value="split">Split Systems</option>
+              <option value="vrf">VRF Systems</option>
+              <option value="chilled">Chilled Water</option>
+              <option value="mixed">Mixed Systems</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="electrical-service">Electrical Service</label>
+            <select id="electrical-service" name="electricalService">
+              <option value="">Select Service</option>
+              <option value="120-240">120/240V Single Phase</option>
+              <option value="208">208V Three Phase</option>
+              <option value="480">480V Three Phase</option>
+              <option value="high-voltage">High Voltage</option>
+            </select>
+          </div>
+        </div>
+      </form>
+    </div>
+  `;
+}
+
+function getStep3Content() {
+  return `
+    <div class="onboarding-step active">
+      <h2 class="step-title">Emergency Contact Details</h2>
+      <p class="step-description">Provide emergency contacts for different service categories to ensure rapid response.</p>
+      
+      <form class="onboarding-form" novalidate>
+        <div class="contact-group">
+          <h4><i class="fas fa-shield-alt"></i> Security & Access Control</h4>
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="security-company">Security Company</label>
+              <input type="text" id="security-company" name="securityCompany" placeholder="Company name">
+            </div>
+            <div class="form-group">
+              <label for="security-phone">24/7 Security Phone</label>
+              <input type="tel" id="security-phone" name="securityPhone" placeholder="(555) 123-4567">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="alarm-codes">Alarm Codes/Access Information</label>
+            <textarea id="alarm-codes" name="alarmCodes" rows="2" placeholder="Alarm codes, access procedures, etc. (encrypted storage)"></textarea>
+          </div>
+        </div>
+        
+        <div class="contact-group">
+          <h4><i class="fas fa-fire"></i> Fire & Life Safety</h4>
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="fire-dept">Local Fire Department</label>
+              <input type="tel" id="fire-dept" name="fireDept" placeholder="Emergency number">
+            </div>
+            <div class="form-group">
+              <label for="fire-system-vendor">Fire System Vendor</label>
+              <input type="text" id="fire-system-vendor" name="fireSystemVendor" placeholder="Company name">
+            </div>
+          </div>
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="fire-vendor-phone">Fire Vendor Phone</label>
+              <input type="tel" id="fire-vendor-phone" name="fireVendorPhone" placeholder="(555) 123-4567">
+            </div>
+            <div class="form-group">
+              <label for="sprinkler-shutoff">Main Sprinkler Shutoff Location</label>
+              <input type="text" id="sprinkler-shutoff" name="sprinklerShutoff" placeholder="Location description">
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-group">
+          <h4><i class="fas fa-wrench"></i> Plumbing & Water</h4>
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="plumbing-vendor">Primary Plumbing Vendor</label>
+              <input type="text" id="plumbing-vendor" name="plumbingVendor" placeholder="Company name">
+            </div>
+            <div class="form-group">
+              <label for="plumbing-phone">Plumbing Emergency Phone</label>
+              <input type="tel" id="plumbing-phone" name="plumbingPhone" placeholder="(555) 123-4567">
+            </div>
+          </div>
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="water-shutoff">Main Water Shutoff Location</label>
+              <input type="text" id="water-shutoff" name="waterShutoff" placeholder="Location description">
+            </div>
+            <div class="form-group">
+              <label for="water-utility">Water Utility Company</label>
+              <input type="text" id="water-utility" name="waterUtility" placeholder="Utility company name">
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-group">
+          <h4><i class="fas fa-bolt"></i> Electrical & Power</h4>
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="electrical-vendor">Electrical Contractor</label>
+              <input type="text" id="electrical-vendor" name="electricalVendor" placeholder="Company name">
+            </div>
+            <div class="form-group">
+              <label for="electrical-phone">Electrical Emergency Phone</label>
+              <input type="tel" id="electrical-phone" name="electricalPhone" placeholder="(555) 123-4567">
+            </div>
+          </div>
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="main-electrical">Main Electrical Panel Location</label>
+              <input type="text" id="main-electrical" name="mainElectrical" placeholder="Location description">
+            </div>
+            <div class="form-group">
+              <label for="power-utility">Power Utility Company</label>
+              <input type="text" id="power-utility" name="powerUtility" placeholder="Utility company name">
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-group">
+          <h4><i class="fas fa-snowflake"></i> HVAC & Climate Control</h4>
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="hvac-vendor">HVAC Service Vendor</label>
+              <input type="text" id="hvac-vendor" name="hvacVendor" placeholder="Company name">
+            </div>
+            <div class="form-group">
+              <label for="hvac-phone">HVAC Emergency Phone</label>
+              <input type="tel" id="hvac-phone" name="hvacPhone" placeholder="(555) 123-4567">
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  `;
+}
+
+function getStep4Content() {
+  return `
+    <div class="onboarding-step active">
+      <h2 class="step-title">Document Uploads</h2>
+      <p class="step-description">Upload essential documents for your facility management setup. All files are securely encrypted.</p>
+      
+      <form class="onboarding-form" novalidate>
+        <div class="form-group">
+          <label for="asset-inventory">Asset Inventory & Equipment List</label>
+          <div class="file-upload-area" data-upload="assetInventory">
+            <div class="file-upload-icon">
+              <i class="fas fa-file-excel"></i>
+            </div>
+            <div class="file-upload-text">Drop your asset inventory file here or click to browse</div>
+            <div class="file-upload-hint">Accepted formats: PDF, Excel, CSV (Max 10MB)</div>
+            <input type="file" id="asset-inventory-input" accept=".pdf,.xlsx,.xls,.csv" style="display: none;" multiple>
+          </div>
+          <div class="uploaded-files" id="asset-inventory-files"></div>
+        </div>
+        
+        <div class="form-group">
+          <label for="pm-calendar">Preventive Maintenance Calendar</label>
+          <div class="file-upload-area" data-upload="pmCalendar">
+            <div class="file-upload-icon">
+              <i class="fas fa-calendar-alt"></i>
+            </div>
+            <div class="file-upload-text">Drop your PM calendar file here or click to browse</div>
+            <div class="file-upload-hint">Accepted formats: PDF, Excel, CSV (Max 10MB)</div>
+            <input type="file" id="pm-calendar-input" accept=".pdf,.xlsx,.xls,.csv" style="display: none;" multiple>
+          </div>
+          <div class="uploaded-files" id="pm-calendar-files"></div>
+        </div>
+        
+        <div class="form-group">
+          <label for="floor-plans">Floor Plans & Building Drawings</label>
+          <div class="file-upload-area" data-upload="floorPlans">
+            <div class="file-upload-icon">
+              <i class="fas fa-drafting-compass"></i>
+            </div>
+            <div class="file-upload-text">Drop your floor plans here or click to browse</div>
+            <div class="file-upload-hint">Accepted formats: PDF, CAD, Images (Max 20MB per file)</div>
+            <input type="file" id="floor-plans-input" accept=".pdf,.dwg,.jpg,.jpeg,.png" style="display: none;" multiple>
+          </div>
+          <div class="uploaded-files" id="floor-plans-files"></div>
+        </div>
+        
+        <div class="form-group">
+          <label for="nda">Non-Disclosure Agreement (if)</label>
+          <div class="file-upload-area" data-upload="nda">
+            <div class="file-upload-icon">
+              <i class="fas fa-file-contract"></i>
+            </div>
+            <div class="file-upload-text">Drop your NDA here or click to browse</div>
+            <div class="file-upload-hint">Accepted formats: PDF, Word (Max 5MB)</div>
+            <input type="file" id="nda-input" accept=".pdf,.doc,.docx" style="display: none;">
+          </div>
+          <div class="uploaded-files" id="nda-files"></div>
+        </div>
+        
+        <div class="form-group">
+          <label for="insurance-docs">Insurance & Liability Documents</label>
+          <div class="file-upload-area" data-upload="insurance">
+            <div class="file-upload-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="file-upload-text">Drop insurance documents here or click to browse</div>
+            <div class="file-upload-hint">Accepted formats: PDF (Max 10MB per file)</div>
+            <input type="file" id="insurance-input" accept=".pdf" style="display: none;" multiple>
+          </div>
+          <div class="uploaded-files" id="insurance-files"></div>
+        </div>
+        
+        <div class="form-group">
+          <label for="vendor-contracts">Existing Vendor Contracts (Optional)</label>
+          <div class="file-upload-area" data-upload="contracts">
+            <div class="file-upload-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <div class="file-upload-text">Drop vendor contracts here or click to browse</div>
+            <div class="file-upload-hint">Accepted formats: PDF, Word (Max 10MB per file)</div>
+            <input type="file" id="contracts-input" accept=".pdf,.doc,.docx" style="display: none;" multiple>
+          </div>
+          <div class="uploaded-files" id="contracts-files"></div>
+        </div>
+      </form>
+    </div>
+  `;
+}
+
+function getStep5Content() {
+  return `
+    <div class="onboarding-step active">
+      <h2 class="step-title">Payment Setup</h2>
+      <p class="step-description">Link your bank account for automated FFM flat-fee payments and escrow management.</p>
+      
+      <form class="onboarding-form" novalidate>
+        <div style="background: rgba(0, 212, 170, 0.1); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(0, 212, 170, 0.2); margin-bottom: 2rem;">
+          <h4 style="color: var(--electric-teal); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+            <i class="fas fa-lock"></i> Secure Bank-Level Encryption
+          </h4>
+          <p style="color: var(--text-light); margin: 0; font-size: 0.9rem;">
+            All payment information is encrypted with 256-bit SSL and stored securely with our PCI-compliant payment processor. FFM never stores your complete banking details.
+          </p>
+        </div>
+        
+        <div class="form-group">
+          <label for="payment-method">Preferred Payment Method *</label>
+          <select id="payment-method" name="paymentMethod" onchange="togglePaymentFields()">
+            <option value="">Select Payment Method</option>
+            <option value="ach">ACH Bank Transfer (Recommended)</option>
+            <option value="credit">Credit Card</option>
+            <option value="check">Check Payment</option>
+          </select>
+        </div>
+        
+        <div id="ach-fields" style="display: none;">
+          <h4 style="color: var(--electric-teal); margin: 1.5rem 0 1rem; font-size: 1.1rem;">Bank Account Information</h4>
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="bank-name">Bank Name *</label>
+              <input type="text" id="bank-name" name="bankName" placeholder="e.g., Chase Bank">
+            </div>
+            <div class="form-group">
+              <label for="account-type">Account Type *</label>
+              <select id="account-type" name="accountType">
+                <option value="">Select Type</option>
+                <option value="checking">Business Checking</option>
+                <option value="savings">Business Savings</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="routing-number">Routing Number *</label>
+              <input type="text" id="routing-number" name="routingNumber" placeholder="9-digit routing number" maxlength="9">
+            </div>
+            <div class="form-group">
+              <label for="account-number">Account Number *</label>
+              <input type="text" id="account-number" name="accountNumber" placeholder="Account number">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="account-holder">Account Holder Name *</label>
+            <input type="text" id="account-holder" name="accountHolder" placeholder="Name on account">
+          </div>
+        </div>
+        
+        <div id="credit-fields" style="display: none;">
+          <h4 style="color: var(--electric-teal); margin: 1.5rem 0 1rem; font-size: 1.1rem;">Credit Card Information</h4>
+          <div style="background: rgba(255, 193, 7, 0.1); padding: 1rem; border-radius: 8px; border: 1px solid rgba(255, 193, 7, 0.3); margin-bottom: 1rem;">
+            <p style="color: var(--warning-orange); margin: 0; font-size: 0.9rem;">
+              <i class="fas fa-info-circle"></i> Note: Credit card payments include a 2.9% processing fee. ACH transfers are fee-free.
+            </p>
+          </div>
+          <div class="form-group">
+            <label for="card-number">Card Number *</label>
+            <input type="text" id="card-number" name="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19">
+          </div>
+          <div class="form-grid-3">
+            <div class="form-group">
+              <label for="exp-month">Exp Month *</label>
+              <select id="exp-month" name="expMonth">
+                <option value="">Month</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exp-year">Exp Year *</label>
+              <select id="exp-year" name="expYear">
+                <option value="">Year</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="cvv">CVV *</label>
+              <input type="text" id="cvv" name="cvv" placeholder="123" maxlength="4">
+            </div>
+          </div>
+        </div>
+        
+        <div id="check-fields" style="display: none;">
+          <h4 style="color: var(--electric-teal); margin: 1.5rem 0 1rem; font-size: 1.1rem;">Check Payment Setup</h4>
+          <div style="background: rgba(0, 212, 170, 0.1); padding: 1rem; border-radius: 8px; border: 1px solid rgba(0, 212, 170, 0.2); margin-bottom: 1rem;">
+            <p style="color: var(--text-light); margin: 0; font-size: 0.9rem;">
+              Monthly invoices will be mailed to your billing address. Payment terms: Net 30 days.
+            </p>
+          </div>
+          <div class="form-group">
+            <label for="billing-address">Billing Address *</label>
+            <textarea id="billing-address" name="billingAddress" rows="3" placeholder="Street address, city, state, ZIP code"></textarea>
+          </div>
+        </div>
+        
+        <div class="form-group" style="margin-top: 2rem;">
+          <label for="billing-contact">Billing Contact Person *</label>
+          <input type="text" id="billing-contact" name="billingContact" placeholder="Name of person responsible for payments">
+        </div>
+        
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label for="billing-email">Billing Email *</label>
+            <input type="email" id="billing-email" name="billingEmail" placeholder="billing@company.com">
+          </div>
+          <div class="form-group">
+            <label for="billing-phone">Billing Phone</label>
+            <input type="tel" id="billing-phone" name="billingPhone" placeholder="(555) 123-4567">
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label>
+            <input type="checkbox" id="authorize-payment" name="authorizePayment" style="margin-right: 0.5rem;">
+            I authorize FFM to charge the selected payment method for monthly flat fees and approved project expenses
+          </label>
+        </div>
+      </form>
+    </div>
+  `;
+}
+
+function getStep6Content() {
+  return `
+    <div class="onboarding-step active">
+      <h2 class="step-title">Budget & Escrow Configuration</h2>
+      <p class="step-description">Set up your facility management budgets and escrow rules for project protection.</p>
+      
+      <form class="onboarding-form" novalidate>
+        <div class="budget-card">
+          <h4>Annual Facility Management Budget</h4>
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="annual-budget">Total Annual Budget *</label>
+              <input type="number" id="annual-budget" name="annualBudget" placeholder="e.g., 120000">
+            </div>
+            <div class="form-group">
+              <label for="monthly-budget">Monthly Budget Limit</label>
+              <input type="number" id="monthly-budget" name="monthlyBudget" placeholder="Auto-calculated" readonly>
+            </div>
+          </div>
+        </div>
+        
+        <div class="budget-card">
+          <h4>Budget Allocation by Category</h4>
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="preventive-maintenance">Preventive Maintenance (%)</label>
+              <input type="number" id="preventive-maintenance" name="preventiveMaintenance" placeholder="40" min="0" max="100">
+            </div>
+            <div class="form-group">
+              <label for="reactive-maintenance">Reactive Maintenance (%)</label>
+              <input type="number" id="reactive-maintenance" name="reactiveMaintenance" placeholder="30" min="0" max="100">
+            </div>
+          </div>
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="capital-improvements">Capital Improvements (%)</label>
+              <input type="number" id="capital-improvements" name="capitalImprovements" placeholder="20" min="0" max="100">
+            </div>
+            <div class="form-group">
+              <label for="emergency-reserve">Emergency Reserve (%)</label>
+              <input type="number" id="emergency-reserve" name="emergencyReserve" placeholder="10" min="0" max="100">
+            </div>
+          </div>
+          <div id="budget-total" style="font-weight: 600; color: var(--electric-teal); margin-top: 1rem;"></div>
+        </div>
+        
+        <div class="budget-card">
+          <h4>Escrow Rules & Approval Thresholds</h4>
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="auto-approve-limit">Auto-Approval Limit *</label>
+              <input type="number" id="auto-approve-limit" name="autoApproveLimit" placeholder="e.g., 1000">
+              <small style="color: var(--silver-accent); font-size: 0.8rem;">Projects under this amount are auto-approved</small>
+            </div>
+            <div class="form-group">
+              <label for="manual-approve-limit">Manual Approval Limit *</label>
+              <input type="number" id="manual-approve-limit" name="manualApproveLimit" placeholder="e.g., 5000">
+              <small style="color: var(--silver-accent); font-size: 0.8rem;">Projects requiring your approval</small>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="escrow-release">Escrow Release Trigger *</label>
+            <select id="escrow-release" name="escrowRelease">
+              <option value="">Select Release Trigger</option>
+              <option value="completion">Project Completion Only</option>
+              <option value="milestone">Milestone-Based Release</option>
+              <option value="time">Time-Based Release (Net 30)</option>
+              <option value="approval">Manual Approval</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="budget-card">
+          <h4>Emergency Response Budget</h4>
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="emergency-limit">Emergency Response Limit *</label>
+              <input type="number" id="emergency-limit" name="emergencyLimit" placeholder="e.g., 10000">
+              <small style="color: var(--silver-accent); font-size: 0.8rem;">Maximum for immediate emergency response</small>
+            </div>
+            <div class="form-group">
+              <label for="emergency-contact-hours">Emergency Contact Hours</label>
+              <select id="emergency-contact-hours" name="emergencyContactHours">
+                <option value="">Select Hours</option>
+                <option value="24-7">24/7 Authorization</option>
+                <option value="business">Business Hours Only</option>
+                <option value="extended">Extended Hours (6 AM - 10 PM)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="budget-notifications">Budget Alert Preferences</label>
+          <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0.5rem;">
+            <label style="color: var(--text-light); font-weight: normal;">
+              <input type="checkbox" name="budgetAlerts" value="monthly-report" style="margin-right: 0.5rem;">
+              Monthly budget utilization reports
+            </label>
+            <label style="color: var(--text-light); font-weight: normal;">
+              <input type="checkbox" name="budgetAlerts" value="75-percent" style="margin-right: 0.5rem;">
+              Alert at 75% budget utilization
+            </label>
+            <label style="color: var(--text-light); font-weight: normal;">
+              <input type="checkbox" name="budgetAlerts" value="90-percent" style="margin-right: 0.5rem;">
+              Alert at 90% budget utilization
+            </label>
+            <label style="color: var(--text-light); font-weight: normal;">
+              <input type="checkbox" name="budgetAlerts" value="overage" style="margin-right: 0.5rem;">
+              Alert on budget overages
+            </label>
+          </div>
+        </div>
+      </form>
+    </div>
+  `;
+}
+
+function getStep7Content() {
+  return `
+    <div class="onboarding-step active">
+      <h2 class="step-title">Team Roles & Permissions</h2>
+      <p class="step-description">Assign team members to key roles and set their access permissions within the FFM platform.</p>
+      
+      <form class="onboarding-form" novalidate>
+        <div class="role-assignment">
+          <h4>Regional Facilities Manager</h4>
+          <p style="color: var(--silver-accent); margin-bottom: 1rem; font-size: 0.9rem;">
+            Primary contact for facility operations, budget oversight, and vendor coordination
+          </p>
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="regional-fm-name">Name *</label>
+              <input type="text" id="regional-fm-name" name="regionalFmName">
+            </div>
+            <div class="form-group">
+              <label for="regional-fm-email">Email *</label>
+              <input type="email" id="regional-fm-email" name="regionalFmEmail">
+            </div>
+          </div>
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="regional-fm-phone">Phone</label>
+              <input type="tel" id="regional-fm-phone" name="regionalFmPhone">
+            </div>
+            <div class="form-group">
+              <label for="regional-fm-title">Job Title</label>
+              <input type="text" id="regional-fm-title" name="regionalFmTitle" placeholder="e.g., Facilities Director">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Permissions</label>
+            <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0.5rem;">
+              <label style="color: var(--text-light); font-weight: normal;">
+                <input type="checkbox" name="regionalFmPerms" value="approve-projects" checked style="margin-right: 0.5rem;">
+                Approve projects up to manual approval limit
+              </label>
+              <label style="color: var(--text-light); font-weight: normal;">
+                <input type="checkbox" name="regionalFmPerms" value="vendor-management" checked style="margin-right: 0.5rem;">
+                Vendor selection and management
+              </label>
+              <label style="color: var(--text-light); font-weight: normal;">
+                <input type="checkbox" name="regionalFmPerms" value="budget-oversight" checked style="margin-right: 0.5rem;">
+                Budget monitoring and reporting
+              </label>
+              <label style="color: var(--text-light); font-weight: normal;">
+                <input type="checkbox" name="regionalFmPerms" value="emergency-response" checked style="margin-right: 0.5rem;">
+                Emergency response authorization
+              </label>
+            </div>
+          </div>
+        </div>
+        
+        <div class="role-assignment">
+          <h4>On-Site Facilities Manager</h4>
+          <p style="color: var(--silver-accent); margin-bottom: 1rem; font-size: 0.9rem;">
+            Day-to-day facility operations, vendor coordination, and immediate response
+          </p>
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="onsite-fm-name">Name</label>
+              <input type="text" id="onsite-fm-name" name="onsiteFmName">
+            </div>
+            <div class="form-group">
+              <label for="onsite-fm-email">Email</label>
+              <input type="email" id="onsite-fm-email" name="onsiteFmEmail">
+            </div>
+          </div>
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="onsite-fm-phone">Phone</label>
+              <input type="tel" id="onsite-fm-phone" name="onsiteFmPhone">
+            </div>
+            <div class="form-group">
+              <label for="onsite-fm-title">Job Title</label>
+              <input type="text" id="onsite-fm-title" name="onsiteFmTitle" placeholder="e.g., Facilities Coordinator">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Permissions</label>
+            <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0.5rem;">
+              <label style="color: var(--text-light); font-weight: normal;">
+                <input type="checkbox" name="onsiteFmPerms" value="submit-requests" checked style="margin-right: 0.5rem;">
+                Submit service requests
+              </label>
+              <label style="color: var(--text-light); font-weight: normal;">
+                <input type="checkbox" name="onsiteFmPerms" value="vendor-coordination" checked style="margin-right: 0.5rem;">
+                Coordinate with vendors on-site
+              </label>
+              <label style="color: var(--text-light); font-weight: normal;">
+                <input type="checkbox" name="onsiteFmPerms" value="small-approvals" style="margin-right: 0.5rem;">
+                Approve small projects (under $500)
+              </label>
+              <label style="color: var(--text-light); font-weight: normal;">
+                <input type="checkbox" name="onsiteFmPerms" value="reporting" checked style="margin-right: 0.5rem;">
+                View reports and project status
+              </label>
+            </div>
+          </div>
+        </div>
+        
+        <div class="role-assignment">
+          <h4>Chief Financial Officer / Budget Approver</h4>
+          <p style="color: var(--silver-accent); margin-bottom: 1rem; font-size: 0.9rem;">
+            Financial oversight, budget approval, and escrow management
+          </p>
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="cfo-name">Name</label>
+              <input type="text" id="cfo-name" name="cfoName">
+            </div>
+            <div class="form-group">
+              <label for="cfo-email">Email</label>
+              <input type="email" id="cfo-email" name="cfoEmail">
+            </div>
+          </div>
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="cfo-phone">Phone</label>
+              <input type="tel" id="cfo-phone" name="cfoPhone">
+            </div>
+            <div class="form-group">
+              <label for="cfo-title">Job Title</label>
+              <input type="text" id="cfo-title" name="cfoTitle" placeholder="e.g., CFO, Finance Director">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Permissions</label>
+            <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0.5rem;">
+              <label style="color: var(--text-light); font-weight: normal;">
+                <input type="checkbox" name="cfoPerms" value="budget-approval" checked style="margin-right: 0.5rem;">
+                Final approval for budget changes
+              </label>
+              <label style="color: var(--text-light); font-weight: normal;">
+                <input type="checkbox" name="cfoPerms" value="large-projects" checked style="margin-right: 0.5rem;">
+                Approve large projects (over manual limit)
+              </label>
+              <label style="color: var(--text-light); font-weight: normal;">
+                <input type="checkbox" name="cfoPerms" value="financial-reports" checked style="margin-right: 0.5rem;">
+                Full financial reporting access
+              </label>
+              <label style="color: var(--text-light); font-weight: normal;">
+                <input type="checkbox" name="cfoPerms" value="escrow-management" style="margin-right: 0.5rem;">
+                Escrow fund management
+              </label>
+            </div>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="additional-users">Additional Platform Users</label>
+          <textarea id="additional-users" name="additionalUsers" rows="3" placeholder="List any additional team members who need platform access (Name, Email, Role)"></textarea>
+        </div>
+        
+        <div class="form-group">
+          <label for="notification-preferences">Platform Notification Preferences</label>
+          <select id="notification-preferences" name="notificationPreferences">
+            <option value="">Select Default Preference</option>
+            <option value="immediate">Immediate notifications (Email + SMS)</option>
+            <option value="daily">Daily digest emails</option>
+            <option value="weekly">Weekly summary reports</option>
+            <option value="critical-only">Critical alerts only</option>
+          </select>
+        </div>
+      </form>
+    </div>
+  `;
+}
+
+function validateCurrentStep() {
+  const currentStepElement = document.querySelector('.onboarding-step.active');
+  if (!currentStepElement) return true;
+  
+  const requiredFields = currentStepElement.querySelectorAll('input[required], select[required], textarea[required]');
+  let isValid = true;
+  
+  requiredFields.forEach(field => {
+    if (!field.value.trim()) {
+      field.style.borderColor = 'var(--error-red)';
+      isValid = false;
+    } else {
+      field.style.borderColor = 'rgba(196, 200, 204, 0.3)';
+    }
+  });
+  
+  // Special validation for step 6 (budget percentages)
+  if (currentOnboardingStep === 6) {
+    const preventive = parseFloat(document.getElementById('preventive-maintenance').value) || 0;
+    const reactive = parseFloat(document.getElementById('reactive-maintenance').value) || 0;
+    const capital = parseFloat(document.getElementById('capital-improvements').value) || 0;
+    const emergency = parseFloat(document.getElementById('emergency-reserve').value) || 0;
+    const total = preventive + reactive + capital + emergency;
+    
+    if (total !== 100 && total !== 0) {
+      alert('Budget allocation percentages must total 100%');
+      isValid = false;
+    }
+  }
+  
+  if (!isValid) {
+    alert('Please fill in all fields before continuing.');
+  }
+  
+  return isValid;
+}
+
+function saveStepData() {
+  const currentStepElement = document.querySelector('.onboarding-step.active');
+  if (!currentStepElement) return;
+  
+  const formElements = currentStepElement.querySelectorAll('input, select, textarea');
+  const stepData = {};
+  
+  formElements.forEach(element => {
+    if (element.type === 'checkbox') {
+      if (!stepData[element.name]) stepData[element.name] = [];
+      if (element.checked) {
+        stepData[element.name].push(element.value);
+      }
+    } else {
+      stepData[element.name] = element.value;
+    }
+  });
+  
+  onboardingData[`step${currentOnboardingStep}`] = stepData;
+}
+
+function populateFormFields(step) {
+  const stepData = onboardingData[`step${step}`];
+  if (!stepData) return;
+  
+  Object.keys(stepData).forEach(fieldName => {
+    const element = document.querySelector(`[name="${fieldName}"]`);
+    if (element) {
+      if (element.type === 'checkbox') {
+        const checkboxes = document.querySelectorAll(`[name="${fieldName}"]`);
+        checkboxes.forEach(checkbox => {
+          checkbox.checked = Array.isArray(stepData[fieldName]) && stepData[fieldName].includes(checkbox.value);
+        });
+      } else {
+        element.value = stepData[fieldName];
+      }
+    }
+  });
+}
+
+function completeOnboarding() {
+  const onboardingBody = document.getElementById('onboarding-body');
+  
+  onboardingBody.innerHTML = `
+    <div class="completion-summary">
+      <div class="completion-icon">
+        <i class="fas fa-check-circle"></i>
+      </div>
+      <h2 class="completion-title">Onboarding Complete!</h2>
+      <p class="completion-message">
+        Welcome to FFM! Your facility management setup has been successfully configured. 
+        Our team will review your information and contact you within 24 hours to finalize your service agreement.
+      </p>
+      
+      <div class="next-steps">
+        <h4>Next Steps:</h4>
+        <ul>
+          <li><i class="fas fa-phone"></i> Welcome call within 24 hours</li>
+          <li><i class="fas fa-file-signature"></i> Service agreement finalization</li>
+          <li><i class="fas fa-key"></i> Platform access credentials delivered</li>
+          <li><i class="fas fa-users"></i> Team member account setup</li>
+          <li><i class="fas fa-rocket"></i> Service commencement (3-5 business days)</li>
+        </ul>
+      </div>
+      
+      <div style="margin-top: 2rem;">
+        <button class="btn btn-primary" onclick="downloadOnboardingSummary()" style="margin-right: 1rem;">
+          <i class="fas fa-download"></i> Download Summary
+        </button>
+        <button class="btn btn-secondary" onclick="closeOnboarding()">
+          <i class="fas fa-home"></i> Return to Homepage
+        </button>
+      </div>
+    </div>
+  `;
+  
+  // Hide footer navigation
+  document.querySelector('.onboarding-footer').style.display = 'none';
+  
+  // Update progress to 100%
+  document.getElementById('onboarding-progress').style.width = '100%';
+}
+
+function downloadOnboardingSummary() {
+  // Create a summary of the onboarding data
+  let summary = "FFM ONBOARDING SUMMARY\n";
+  summary += "========================\n\n";
+  
+  Object.keys(onboardingData).forEach(step => {
+    summary += `${step.toUpperCase()}:\n`;
+    const stepData = onboardingData[step];
+    Object.keys(stepData).forEach(field => {
+      if (stepData[field]) {
+        summary += `${field}: ${Array.isArray(stepData[field]) ? stepData[field].join(', ') : stepData[field]}\n`;
+      }
+    });
+    summary += "\n";
+  });
+  
+  summary += `Generated: ${new Date().toLocaleString()}\n`;
+  summary += "Contact: info@ffm-platform.com\n";
+  
+  // Create and download file
+  const blob = new Blob([summary], { type: 'text/plain' });
+  const url = window.URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'FFM_Onboarding_Summary.txt';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  window.URL.revokeObjectURL(url);
+}
+
+// File Upload Functions
+function initializeFileUploads() {
+  const uploadAreas = document.querySelectorAll('.file-upload-area');
+  
+  uploadAreas.forEach(area => {
+    const uploadType = area.getAttribute('data-upload');
+    const input = document.getElementById(`${uploadType === 'assetInventory' ? 'asset-inventory' : 
+                                        uploadType === 'pmCalendar' ? 'pm-calendar' :
+                                        uploadType === 'floorPlans' ? 'floor-plans' :
+                                        uploadType === 'nda' ? 'nda' :
+                                        uploadType === 'insurance' ? 'insurance' :
+                                        'contracts'}-input`);
+    
+    area.addEventListener('click', () => input.click());
+    
+    area.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      area.classList.add('dragover');
+    });
+    
+    area.addEventListener('dragleave', () => {
+      area.classList.remove('dragover');
+    });
+    
+    area.addEventListener('drop', (e) => {
+      e.preventDefault();
+      area.classList.remove('dragover');
+      handleFileUpload(e.dataTransfer.files, uploadType);
+    });
+    
+    input.addEventListener('change', (e) => {
+      handleFileUpload(e.target.files, uploadType);
+    });
+  });
+}
+
+function handleFileUpload(files, uploadType) {
+  const filesContainer = document.getElementById(`${uploadType === 'assetInventory' ? 'asset-inventory' : 
+                                                uploadType === 'pmCalendar' ? 'pm-calendar' :
+                                                uploadType === 'floorPlans' ? 'floor-plans' :
+                                                uploadType === 'nda' ? 'nda' :
+                                                uploadType === 'insurance' ? 'insurance' :
+                                                'contracts'}-files`);
+  
+  Array.from(files).forEach(file => {
+    if (validateFile(file, uploadType)) {
+      addFileToDisplay(file, filesContainer, uploadType);
+    }
+  });
+}
+
+function validateFile(file, uploadType) {
+  const maxSizes = {
+    assetInventory: 10 * 1024 * 1024, // 10MB
+    pmCalendar: 10 * 1024 * 1024,
+    floorPlans: 20 * 1024 * 1024, // 20MB
+    nda: 5 * 1024 * 1024, // 5MB
+    insurance: 10 * 1024 * 1024,
+    contracts: 10 * 1024 * 1024
+  };
+  
+  const allowedTypes = {
+    assetInventory: ['.pdf', '.xlsx', '.xls', '.csv'],
+    pmCalendar: ['.pdf', '.xlsx', '.xls', '.csv'],
+    floorPlans: ['.pdf', '.dwg', '.jpg', '.jpeg', '.png'],
+    nda: ['.pdf', '.doc', '.docx'],
+    insurance: ['.pdf'],
+    contracts: ['.pdf', '.doc', '.docx']
+  };
+  
+  if (file.size > maxSizes[uploadType]) {
+    alert(`File size too large. Maximum size: ${Math.round(maxSizes[uploadType] / 1024 / 1024)}MB`);
+    return false;
+  }
+  
+  const fileExtension = '.' + file.name.split('.').pop().toLowerCase();
+  if (!allowedTypes[uploadType].includes(fileExtension)) {
+    alert(`File type not allowed. Accepted types: ${allowedTypes[uploadType].join(', ')}`);
+    return false;
+  }
+  
+  return true;
+}
+
+function addFileToDisplay(file, container, uploadType) {
+  const fileElement = document.createElement('div');
+  fileElement.className = 'uploaded-file';
+  fileElement.innerHTML = `
+    <div class="uploaded-file-info">
+      <i class="fas fa-file"></i>
+      <div>
+        <div class="uploaded-file-name">${file.name}</div>
+        <div class="uploaded-file-size">${formatFileSize(file.size)}</div>
+      </div>
+    </div>
+    <button class="remove-file" onclick="removeFile(this)">
+      <i class="fas fa-times"></i>
+    </button>
+  `;
+  container.appendChild(fileElement);
+}
+
+function removeFile(button) {
+  button.parentElement.remove();
+}
+
+function formatFileSize(bytes) {
+  if (bytes === 0) return '0 Bytes';
+  const k = 1024;
+  const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+  const i = Math.floor(Math.log(bytes) / Math.log(k));
+  return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+}
+
+// Payment method toggle
+function togglePaymentFields() {
+  const paymentMethod = document.getElementById('payment-method').value;
+  
+  document.getElementById('ach-fields').style.display = paymentMethod === 'ach' ? 'block' : 'none';
+  document.getElementById('credit-fields').style.display = paymentMethod === 'credit' ? 'block' : 'none';
+  document.getElementById('check-fields').style.display = paymentMethod === 'check' ? 'block' : 'none';
+}
+
+// Budget calculation for step 6
+function updateBudgetCalculation() {
+  const annualBudget = parseFloat(document.getElementById('annual-budget').value) || 0;
+  document.getElementById('monthly-budget').value = Math.round(annualBudget / 12);
+  
+  const preventive = parseFloat(document.getElementById('preventive-maintenance').value) || 0;
+  const reactive = parseFloat(document.getElementById('reactive-maintenance').value) || 0;
+  const capital = parseFloat(document.getElementById('capital-improvements').value) || 0;
+  const emergency = parseFloat(document.getElementById('emergency-reserve').value) || 0;
+  const total = preventive + reactive + capital + emergency;
+  
+  const budgetTotal = document.getElementById('budget-total');
+  if (budgetTotal) {
+    budgetTotal.textContent = `Total Allocation: ${total}% ${total === 100 ? '✓' : '(Must equal 100%)'}`;
+    budgetTotal.style.color = total === 100 ? 'var(--success-green)' : 'var(--orange-accent)';
+  }
+}
+
+// Add event listeners for budget calculations
+document.addEventListener('input', function(e) {
+  if (e.target.id === 'annual-budget' || 
+      e.target.id === 'preventive-maintenance' || 
+      e.target.id === 'reactive-maintenance' || 
+      e.target.id === 'capital-improvements' || 
+      e.target.id === 'emergency-reserve') {
+    updateBudgetCalculation();
+  }
+});
+
+// Modal Functions
+function openModal(modalType) {
+  const overlay = document.getElementById('modal-overlay');
+  const modalTitle = document.getElementById('modal-title');
+  const modalBody = document.getElementById('modal-body');
+  
+  let title = '';
+  let content = '';
+  
+  switch(modalType) {
+    case 'client-login':
+      title = 'Client Portal Login';
+      content = `
+        <div class="demo-credentials">
+          <h4>Demo Credentials:</h4>
+          <p><strong>Email:</strong> demo.client@company.com</p>
+          <p><strong>Password:</strong> ClientDemo2025</p>
+        </div>
+        <form onsubmit="handleLogin(event, 'client')" novalidate>
+          <div class="form-group" style="margin-bottom: 1rem;">
+            <label>Email Address</label>
+            <input type="email" id="client-email" style="width: 100%; padding: 0.75rem; border: 1px solid var(--metallic-silver); border-radius: 8px; background: rgba(255,255,255,0.1); color: var(--white);">
+          </div>
+          <div class="form-group" style="margin-bottom: 1.5rem;">
+            <label>Password</label>
+            <input type="password" id="client-password" style="width: 100%; padding: 0.75rem; border: 1px solid var(--metallic-silver); border-radius: 8px; background: rgba(255,255,255,0.1); color: var(--white);">
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            <i class="fas fa-sign-in-alt"></i> Login to Client Portal
+          </button>
+        </form>
+      `;
+      break;
+      
+    case 'vendor-login':
+      title = 'Vendor Portal Login';
+      content = `
+        <div class="demo-credentials">
+          <h4>Demo Credentials:</h4>
+          <p><strong>Email:</strong> demo.vendor@services.com</p>
+          <p><strong>Password:</strong> VendorDemo2025</p>
+        </div>
+        <form onsubmit="handleLogin(event, 'vendor')" novalidate>
+          <div class="form-group" style="margin-bottom: 1rem;">
+            <label>Email Address</label>
+            <input type="email" id="vendor-email" style="width: 100%; padding: 0.75rem; border: 1px solid var(--metallic-silver); border-radius: 8px; background: rgba(255,255,255,0.1); color: var(--white);">
+          </div>
+          <div class="form-group" style="margin-bottom: 1.5rem;">
+            <label>Password</label>
+            <input type="password" id="vendor-password" style="width: 100%; padding: 0.75rem; border: 1px solid var(--metallic-silver); border-radius: 8px; background: rgba(255,255,255,0.1); color: var(--white);">
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            <i class="fas fa-tools"></i> Login to Vendor Portal
+          </button>
+        </form>
+      `;
+      break;
+      
+    case 'demo':
+      title = 'Schedule Your Live Demo';
+      content = `
+        <form onsubmit="handleDemo(event)" novalidate>
+          <div class="form-group" style="margin-bottom: 1rem;">
+            <label>First Name</label>
+            <input type="text" id="demo-fname" style="width: 100%; padding: 0.75rem; border: 1px solid var(--metallic-silver); border-radius: 8px; background: rgba(255,255,255,0.1); color: var(--white);">
+          </div>
+          <div class="form-group" style="margin-bottom: 1rem;">
+            <label>Last Name</label>
+            <input type="text" id="demo-lname" style="width: 100%; padding: 0.75rem; border: 1px solid var(--metallic-silver); border-radius: 8px; background: rgba(255,255,255,0.1); color: var(--white);">
+          </div>
+          <div class="form-group" style="margin-bottom: 1rem;">
+            <label>Work Email</label>
+            <input type="email" id="demo-email" style="width: 100%; padding: 0.75rem; border: 1px solid var(--metallic-silver); border-radius: 8px; background: rgba(255,255,255,0.1); color: var(--white);">
+          </div>
+          <div class="form-group" style="margin-bottom: 1rem;">
+            <label>Company Name</label>
+            <input type="text" id="demo-company" style="width: 100%; padding: 0.75rem; border: 1px solid var(--metallic-silver); border-radius: 8px; background: rgba(255,255,255,0.1); color: var(--white);">
+          </div>
+          <div class="form-group" style="margin-bottom: 1rem;">
+            <label>Phone Number</label>
+            <input type="tel" id="demo-phone" style="width: 100%; padding: 0.75rem; border: 1px solid var(--metallic-silver); border-radius: 8px; background: rgba(255,255,255,0.1); color: var(--white);">
+          </div>
+          <div class="form-group" style="margin-bottom: 1.5rem;">
+            <label>Preferred Time</label>
+            <select id="demo-time" style="width: 100%; padding: 0.75rem; border: 1px solid var(--metallic-silver); border-radius: 8px; background: rgba(255,255,255,0.1); color: var(--white);">
+              <option value="">Select preferred time</option>
+              <option value="morning">Morning (9 AM - 12 PM)</option>
+              <option value="afternoon">Afternoon (1 PM - 4 PM)</option>
+              <option value="evening">Evening (5 PM - 7 PM)</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            <i class="fas fa-calendar-check"></i> Schedule My Demo
+          </button>
+        </form>
+      `;
+      break;
+      
+    case 'rfp':
+      title = 'Submit Your RFP';
+      content = `
+        <form onsubmit="handleRFP(event)" novalidate>
+          <div class="form-group" style="margin-bottom: 1rem;">
+            <label>Contact Name</label>
+            <input type="text" id="rfp-name" style="width: 100%; padding: 0.75rem; border: 1px solid var(--metallic-silver); border-radius: 8px; background: rgba(255,255,255,0.1); color: var(--white);">
+          </div>
+          <div class="form-group" style="margin-bottom: 1rem;">
+            <label>Email Address</label>
+            <input type="email" id="rfp-email" style="width: 100%; padding: 0.75rem; border: 1px solid var(--metallic-silver); border-radius: 8px; background: rgba(255,255,255,0.1); color: var(--white);">
+          </div>
+          <div class="form-group" style="margin-bottom: 1rem;">
+            <label>Organization</label>
+            <input type="text" id="rfp-organization" style="width: 100%; padding: 0.75rem; border: 1px solid var(--metallic-silver); border-radius: 8px; background: rgba(255,255,255,0.1); color: var(--white);">
+          </div>
+          <div class="form-group" style="margin-bottom: 1rem;">
+            <label>Estimated Annual Budget</label>
+            <select id="rfp-budget" style="width: 100%; padding: 0.75rem; border: 1px solid var(--metallic-silver); border-radius: 8px; background: rgba(255,255,255,0.1); color: var(--white);">
+              <option value="">Select budget range</option>
+              <option value="under-50k">Under $50,000</option>
+              <option value="50k-100k">$50,000 - $100,000</option>
+              <option value="100k-250k">$100,000 - $250,000</option>
+              <option value="250k-500k">$250,000 - $500,000</option>
+              <option value="over-500k">Over $500,000</option>
+            </select>
+          </div>
+          <div class="form-group" style="margin-bottom: 1.5rem;">
+            <label>Project Description</label>
+            <textarea id="rfp-description" rows="4" style="width: 100%; padding: 0.75rem; border: 1px solid var(--metallic-silver); border-radius: 8px; background: rgba(255,255,255,0.1); color: var(--white); resize: vertical;" placeholder="Describe your facility management needs, current challenges, and project requirements..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            <i class="fas fa-paper-plane"></i> Submit RFP
+          </button>
+        </form>
+      `;
+      break;
+  }
+  
+  modalTitle.textContent = title;
+  modalBody.innerHTML = content;
+  overlay.style.display = 'flex';
+  
+  // Focus first input
+  setTimeout(() => {
+    const firstInput = modalBody.querySelector('input, select, textarea');
+    if (firstInput) firstInput.focus();
+  }, 100);
+}
+
+function closeModal() {
+  const overlay = document.getElementById('modal-overlay');
+  overlay.style.display = 'none';
+}
+
+// Form Handlers with Auto-Scroll to Top
+function handleLogin(event, type) {
+  event.preventDefault();
+  
+  const email = document.getElementById(`${type}-email`).value;
+  const password = document.getElementById(`${type}-password`).value;
+  
+  const demoCredentials = {
+    client: { email: 'demo.client@company.com', password: 'ClientDemo2025' },
+    vendor: { email: 'demo.vendor@services.com', password: 'VendorDemo2025' }
+  };
+  
+  if (email === demoCredentials[type].email && password === demoCredentials[type].password) {
+    closeModal();
+    
+    // Scroll to top smoothly
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+    
+    setTimeout(() => {
+      alert(`✅ Demo Login Successful!\n\nWelcome to the ${type} portal. In a real implementation, you would be redirected to the ${type} dashboard with features like:\n\n${type === 'client' ? '• Project management dashboard\n• Budget tracking and reports\n• Vendor performance metrics\n• Service request portal\n• Real-time project updates' : '• Job opportunity listings\n• Client communication tools\n• Payment and invoice tracking\n• Performance ratings\n• Project collaboration space'}`);
+    }, 800);
+  } else {
+    alert('❌ Invalid credentials. Please use the demo credentials provided.');
+  }
+}
+
+function handleDemo(event) {
+  event.preventDefault();
+  
+  const formData = {
+    firstName: document.getElementById('demo-fname').value,
+    lastName: document.getElementById('demo-lname').value,
+    email: document.getElementById('demo-email').value,
+    company: document.getElementById('demo-company').value,
+    phone: document.getElementById('demo-phone').value,
+    time: document.getElementById('demo-time').value
+  };
+  
+  closeModal();
+  
+  // Scroll to top smoothly
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+  
+  setTimeout(() => {
+    alert(`✅ Demo Scheduled Successfully!\n\nHi ${formData.firstName}, thank you for your interest in FFM!\n\n📅 Demo Details:\n• Company: ${formData.company}\n• Preferred Time: ${formData.time}\n• Contact: ${formData.email}\n\n📧 Next Steps:\n• Confirmation email sent\n• Calendar invite within 30 minutes\n• Pre-demo materials delivered\n• Dedicated solutions consultant assigned\n\nWe'll showcase how FFM can save your organization 25-40% on facilities management costs!`);
+  }, 800);
+}
+
+function handleRFP(event) {
+  event.preventDefault();
+  
+  const formData = {
+    name: document.getElementById('rfp-name').value,
+    email: document.getElementById('rfp-email').value,
+    organization: document.getElementById('rfp-organization').value,
+    budget: document.getElementById('rfp-budget').value,
+    description: document.getElementById('rfp-description').value
+  };
+  
+  closeModal();
+  
+  // Scroll to top smoothly
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+  
+  setTimeout(() => {
+    alert(`🚀 RFP Submitted Successfully!\n\nThank you ${formData.name}!\n\n📋 RFP Summary:\n• Organization: ${formData.organization}\n• Budget Range: ${formData.budget.replace('-', ' - ').replace('k', ',000').replace('m', ',000,000')}\n• Contact: ${formData.email}\n\n⏰ Response Timeline:\n• Initial review: 24 hours\n• Detailed proposal: 3-5 business days\n• Technical presentation: Within 1 week\n• Custom pricing: 5-7 business days\n\nRFP ID: FFM-${Date.now()}\n\nOur team will contact you within 24 hours to discuss your specific requirements!`);
+  }, 800);
+}
+
+// Back to top functionality
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+// Mobile Menu
+function toggleMobileMenu() {
+  const mobileNav = document.querySelector('.mobile-nav');
+  const overlay = document.querySelector('.mobile-overlay');
+  
+  mobileNav.classList.toggle('active');
+  overlay.classList.toggle('active');
+  
+  if (mobileNav.classList.contains('active')) {
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = 'auto';
+  }
+}
+
+function closeMobileMenu() {
+  const mobileNav = document.querySelector('.mobile-nav');
+  const overlay = document.querySelector('.mobile-overlay');
+  
+  mobileNav.classList.remove('active');
+  overlay.classList.remove('active');
+  document.body.style.overflow = 'auto';
+}
+
+// Enhanced Calculator
+function initializeCalculator() {
+  const form = document.getElementById('calculator-form');
+  const results = document.getElementById('calc-results');
+  
+  if (!form || !results) return;
+  
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const sqft = parseFloat(document.getElementById('sqft').value) || 0;
+    const currentSpend = parseFloat(document.getElementById('current-spend').value) || 0;
+    const facilityType = document.getElementById('facility-type').value;
+    
+    if (sqft <= 0 || currentSpend <= 0 || !facilityType) {
+      results.innerHTML = '<div style="color: var(--orange-accent); text-align: center;">Please fill in all fields with valid values.</div>';
+      return;
+    }
+    
+    // Enhanced calculation based on facility type
+    const baseRate = {
+      office: 0.12,
+      warehouse: 0.08,
+      retail: 0.15,
+      manufacturing: 0.10,
+      healthcare: 0.18,
+      mixed: 0.13
+    };
+    
+    const rate = baseRate[facilityType] || 0.12;
+    const estimatedAnnualFee = sqft * rate;
+    const potentialSavings = currentSpend - estimatedAnnualFee;
+    const savingsPercentage = ((potentialSavings / currentSpend) * 100).toFixed(1);
+    
+    if (potentialSavings > 0) {
+      results.innerHTML = `
+        <div class="savings-result">
+          <div style="font-size: 2rem; font-weight: 700; color: var(--electric-teal); margin-bottom: 1rem;">
+            Potential Annual Savings: ${potentialSavings.toLocaleString()}
+          </div>
+          <div style="font-size: 1.2rem; color: var(--success-green); margin-bottom: 1rem;">
+            That's ${savingsPercentage}% savings!
+          </div>
+          <div style="color: var(--silver-accent); margin-bottom: 1rem;">
+            Your FFM flat fee: ${estimatedAnnualFee.toLocaleString()} vs Current spend: ${currentSpend.toLocaleString()}
+          </div>
+          <div style="font-size: 0.9rem; color: var(--text-light); font-style: italic;">
+            *Estimate based on ${facilityType} facility type. Actual savings may vary.
+          </div>
+        </div>
+      `;
+    } else {
+      results.innerHTML = `
+        <div style="color: var(--orange-accent); text-align: center;">
+          <div style="margin-bottom: 1rem;">
+            Your current spending appears optimized for a ${facilityType} facility.
+          </div>
+          <div style="font-size: 0.9rem;">
+            Let's discuss how FFM can still add value through vendor management and process optimization.
+          </div>
+        </div>
+      `;
+    }
+  });
+}
+
+// Platform Tabs
+function initializePlatformTabs() {
+  const tabButtons = document.querySelectorAll('.tab-btn');
+  const tabContents = document.querySelectorAll('.tab-content');
+  
+  tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const targetTab = button.getAttribute('data-tab');
+      
+      // Remove active class from all buttons and contents
+      tabButtons.forEach(btn => btn.classList.remove('active'));
+      tabContents.forEach(content => content.classList.remove('active'));
+      
+      // Add active class to clicked button and corresponding content
+      button.classList.add('active');
+      document.getElementById(targetTab).classList.add('active');
+    });
+  });
+}
+
+// Testimonial Carousel
+function initializeTestimonialCarousel() {
+  if (testimonials.length === 0) return;
+  
+  // Auto-rotate testimonials
+  setInterval(() => {
+    nextTestimonial();
+  }, 8000);
+}
+
+function nextTestimonial() {
+  if (testimonials.length === 0) return;
+  
+  testimonials[currentTestimonialIndex].classList.remove('active');
+  document.querySelectorAll('.dot')[currentTestimonialIndex].classList.remove('active');
+  
+  currentTestimonialIndex = (currentTestimonialIndex + 1) % testimonials.length;
+  
+  testimonials[currentTestimonialIndex].classList.add('active');
+  document.querySelectorAll('.dot')[currentTestimonialIndex].classList.add('active');
+  
+  updateCarouselPosition();
+}
+
+function previousTestimonial() {
+  if (testimonials.length === 0) return;
+  
+  testimonials[currentTestimonialIndex].classList.remove('active');
+  document.querySelectorAll('.dot')[currentTestimonialIndex].classList.remove('active');
+  
+  currentTestimonialIndex = (currentTestimonialIndex - 1 + testimonials.length) % testimonials.length;
+  
+  testimonials[currentTestimonialIndex].classList.add('active');
+  document.querySelectorAll('.dot')[currentTestimonialIndex].classList.add('active');
+  
+  updateCarouselPosition();
+}
+
+function currentTestimonial(index) {
+  if (testimonials.length === 0) return;
+  
+  testimonials[currentTestimonialIndex].classList.remove('active');
+  document.querySelectorAll('.dot')[currentTestimonialIndex].classList.remove('active');
+  
+  currentTestimonialIndex = index - 1;
+  
+  testimonials[currentTestimonialIndex].classList.add('active');
+  document.querySelectorAll('.dot')[currentTestimonialIndex].classList.add('active');
+  
+  updateCarouselPosition();
+}
+
+function updateCarouselPosition() {
+  const track = document.querySelector('.testimonial-track');
+  if (track) {
+    track.style.transform = `translateX(-${currentTestimonialIndex * 100}%)`;
+  }
+}
+
+// FAQ Toggle
+function toggleFAQ(element) {
+  const faqItem = element.parentElement;
+  const isActive = faqItem.classList.contains('active');
+  
+  // Close all FAQ items
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.classList.remove('active');
+  });
+  
+  // Open clicked item if it wasn't active
+  if (!isActive) {
+    faqItem.classList.add('active');
+  }
+}
+
+// Newsletter
+function initializeNewsletter() {
+  const form = document.getElementById('newsletter-form');
+  if (!form) return;
+  
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const email = document.getElementById('newsletter-email').value;
+    const button = form.querySelector('button');
+    const originalText = button.textContent;
+    
+    if (email) {
+      button.textContent = 'Subscribed!';
+      button.style.background = 'var(--success-green)';
+      
+      setTimeout(() => {
+        button.textContent = originalText;
+        button.style.background = '';
+        document.getElementById('newsletter-email').value = '';
+        alert('✅ Thank you for subscribing! You\'ll receive updates on FFM platform improvements and industry insights.');
+      }, 2000);
+    }
+  });
+}
+
+// Scroll Effects
+function initializeScrollEffects() {
+  const backToTop = document.getElementById('backToTop');
+  const header = document.querySelector('.header');
+  
+  window.addEventListener('scroll', () => {
+    const scrollPosition = window.pageYOffset;
+    
+    // Back to top button
+    if (scrollPosition > 300) {
+      backToTop.classList.add('visible');
+    } else {
+      backToTop.classList.remove('visible');
+    }
+    
+    // Header background
+    if (scrollPosition > 100) {
+      header.style.background = 'rgba(21, 41, 61, 0.98)';
+    } else {
+      header.style.background = 'rgba(21, 41, 61, 0.95)';
+    }
+  });
+}
+
+// Animations
+function initializeAnimations() {
+  // Stats animation
+  const statElements = document.querySelectorAll('.stat-number');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateValue(entry.target);
+      }
+    });
+  });
+  
+  statElements.forEach(el => observer.observe(el));
+  
+  // Initialize newsletter
+  initializeNewsletter();
+}
+
+function animateValue(element) {
+  const target = element.textContent;
+  const numericValue = parseInt(target.replace(/[^\d]/g, ''));
+  const suffix = target.replace(/[\d]/g, '');
+  
+  if (numericValue) {
+    let current = 0;
+    const increment = numericValue / 50;
+    const timer = setInterval(() => {
+      current += increment;
+      if (current >= numericValue) {
+        element.textContent = target;
+        clearInterval(timer);
+      } else {
+        element.textContent = Math.floor(current) + suffix;
+      }
+    }, 50);
+  }
+}
+
+// Event Listeners
+document.addEventListener('click', function(e) {
+  // Close modal when clicking overlay
+  if (e.target.classList.contains('modal-overlay')) {
+    closeModal();
+  }
+  
+  // Close mobile menu when clicking overlay
+  if (e.target.classList.contains('mobile-overlay')) {
+    closeMobileMenu();
+  }
+});
+
+document.addEventListener('keydown', function(e) {
+  // Close modal with Escape key
+  if (e.key === 'Escape') {
+    closeModal();
+    closeMobileMenu();
+  }
+});
+
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      const headerHeight = 80;
+      const targetPosition = target.offsetTop - headerHeight;
+      
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
+      
+      // Close mobile menu if open
+      closeMobileMenu();
+    }
+  });
+});
+
+</script>
+<!-- Vendor Onboarding Modal -->
+<div class="modal-overlay onboarding-modal" id="vendor-overlay" style="display: none;">
+<div class="onboarding-container" onclick="event.stopPropagation()">
+<div class="onboarding-header">
+<div class="onboarding-logo">
+<div class="logo-ffm">FFM</div>
+<div class="logo-subtitle">VENDOR ONBOARDING</div>
+</div>
+<button class="modal-close" onclick="closeVendorOnboarding()">×</button>
+</div>
+<div class="onboarding-progress">
+<div class="progress-bar-container">
+<div class="progress-bar-fill" id="vendor-progress-bar"></div>
+</div>
+<div class="progress-steps">
+<div class="step active" data-step="1">Trade Specialization</div>
+<div class="step" data-step="2">Document Uploads</div>
+<div class="step" data-step="3">Service Area</div>
+<div class="step" data-step="4">Availability Calendar</div>
+<div class="step" data-step="5">Agreement</div>
+</div>
+</div>
+<div class="onboarding-body" id="vendor-onboarding-body"></div>
+</div>
+</div>
+<script>
+    let vendorCurrentStep = 1;
+    const vendorTotalSteps = 5;
+    const vendorFields = [
+      { id: 'tradeSpecialization', label: 'Trade Specialization', type: 'text' },
+      { id: 'licenses', label: 'Licenses, COIs, W-9s, Safety Docs Upload', type: 'file', multiple: true },
+      { id: 'serviceArea', label: 'Service Area', type: 'text' },
+      { id: 'availabilityCalendar', label: 'Availability Calendar', type: 'date' },
+      { id: 'agreementAcceptance', label: 'Agreement Acceptance (e-signature)', type: 'checkbox' }
+    ];
+
+    function startVendorOnboarding() {
+      vendorCurrentStep = 1;
+      document.getElementById('vendor-overlay').style.display = 'flex';
+      updateVendorProgress();
+      loadVendorStep(vendorCurrentStep);
+    }
+
+    function closeVendorOnboarding() {
+  document.getElementById('vendor-overlay').style.display = 'none';
+}
+
+    function updateVendorProgress() {
+      const fill = document.getElementById('vendor-progress-bar');
+      fill.style.width = ((vendorCurrentStep - 1) / (vendorTotalSteps - 1)) * 100 + '%';
+      document.querySelectorAll('#vendor-overlay .progress-steps .step').forEach(step => {
+        step.classList.toggle('active', parseInt(step.dataset.step) === vendorCurrentStep);
+      });
+    }
+
+    function loadVendorStep(step) {
+      const body = document.getElementById('vendor-onboarding-body');
+      body.innerHTML = '';
+      const field = vendorFields[step - 1];
+      const group = document.createElement('div');
+      group.className = 'form-group';
+      const label = document.createElement('label');
+      label.htmlFor = field.id;
+      label.innerText = field.label;
+      group.appendChild(label);
+      let input;
+      if (field.type === 'textarea') {
+        input = document.createElement('textarea');
+      } else {
+        input = document.createElement('input');
+        input.type = field.type;
+        if (field.multiple) input.multiple = true;
+      }
+      input.id = field.id;
+      input.name = field.id;
+      if (field.type !== 'checkbox') input.required = true;
+      group.appendChild(input);
+      body.appendChild(group);
+
+      const nav = document.createElement('div');
+      nav.className = 'onboarding-footer';
+      if (step > 1) {
+        const prev = document.createElement('button');
+        prev.className = 'btn btn-outline footer-cta';
+        prev.innerText = 'Previous';
+        prev.onclick = () => { vendorCurrentStep--; loadVendorStep(vendorCurrentStep); updateVendorProgress(); };
+        nav.appendChild(prev);
+      }
+      if (step < vendorTotalSteps) {
+        const next = document.createElement('button');
+        next.className = 'btn btn-outline footer-cta';
+        next.innerText = 'Next';
+        next.onclick = () => { vendorCurrentStep++; loadVendorStep(vendorCurrentStep); updateVendorProgress(); };
+        nav.appendChild(next);
+      } else {
+        const submit = document.createElement('button');
+        submit.className = 'btn btn-primary';
+        submit.innerText = 'Submit';
+        submit.onclick = () => { /* handle vendor submit */ document.getElementById('vendor-overlay').style.display = 'none'; };
+        nav.appendChild(submit);
+      }
+      body.appendChild(nav);
+    }
+  </script>
+<script>
+function renderClientCharts() {
+  new Chart(document.getElementById('chart-escrow'), { type:'line', data:{labels:['W1','W2','W3','W4'], datasets:[{label:'Escrow Balance',data:[20000,22000,21000,23000]}]} });
+  new Chart(document.getElementById('chart-budget-actual'), { type:'bar', data:{labels:['Jan','Feb','Mar','Apr','May'], datasets:[{label:'Budget',data:[5000,6000,5500,7000,6500]},{label:'Actual',data:[5200,5800,6000,6900,6300]}]} });
+  new Chart(document.getElementById('chart-open-closed'), { type:'pie', data:{labels:['Open','Closed'],datasets:[{data:[12,38]}]} });
+  new Chart(document.getElementById('chart-response-time'),{ type:'line', data:{labels:['Week1','Week2','Week3'],datasets:[{label:'Avg Response (hrs)',data:[4,3,5]}]} });
+  new Chart(document.getElementById('chart-compliance'),{ type:'bar', data:{labels:['Prop1','Prop2','Prop3'],datasets:[{label:'PM Compliance (%)',data:[95,88,92]}]} });
+  new Chart(document.getElementById('chart-vendor-perf'),{ type:'bar', data:{labels:['Vendor A','Vendor B','Vendor C'],datasets:[{label:'Performance Score',data:[4.5,4.2,4.8]}]} });
+}
+function renderVendorCharts() {
+  new Chart(document.getElementById('chart-workorders'), { type:'doughnut', data:{labels:['Received','Completed'],datasets:[{data:[10,8]}]} });
+  new Chart(document.getElementById('chart-bids'), { type:'doughnut', data:{labels:['Won','Pending'],datasets:[{data:[5,3]}]} });
+  new Chart(document.getElementById('chart-ratings'), { type:'line', data:{labels:['Jan','Feb','Mar','Apr','May'],datasets:[{label:'Avg Rating',data:[4.2,4.5,4.0,4.8,4.6]}]} });
+  new Chart(document.getElementById('chart-ontime'), { type:'bar', data:{labels:['Project X','Project Y','Project Z'],datasets:[{label:'On-Time (%)',data:[90,85,95]}]} });
+}
+</script>
+<script>
+// Work Order System Logic
+let woCounter = 1;
+const clientList = document.querySelector('#wo-list-client tbody');
+const vendorList = document.querySelector('#wo-list-vendor tbody');
+
+document.getElementById('wo-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const trade = document.getElementById('wo-trade').value;
+  const urgency = document.querySelector('input[name="wo-urgency"]:checked').value;
+  const desc = document.getElementById('wo-desc').value;
+  const id = woCounter++;
+  const status = 'Submitted';
+  // Add to client list
+  const row = document.createElement('tr');
+  row.innerHTML = `<td>${id}</td><td>${trade}</td><td>${urgency}</td><td id="status-${id}">${status}</td><td><button onclick="routeWO(${id})">Route</button></td>`;
+  clientList.appendChild(row);
+  // Also insert into vendor list for simulation
+  const vRow = document.createElement('tr');
+  vRow.id = 'vrow-' + id;
+  vRow.innerHTML = `<td>${id}</td><td>${trade}</td><td id="vstatus-${id}">Pending</td><td><button onclick="vendorAction(${id})">Accept</button></td>`;
+  vendorList.appendChild(vRow);
+  this.reset();
+});
+
+function routeWO(id) {
+  const urgency = document.querySelector(`#status-${id}`).previousElementSibling.textContent;
+  let assignedVendor = 'Vendor A';
+  let routedStatus = 'Routed';
+  document.getElementById('status-' + id).textContent = routedStatus;
+  // Urgent: first to accept wins
+  if (urgency === 'Urgent') {
+    assignedVendor = 'Vendor A (first responder)';
+  }
+  document.getElementById('vstatus-' + id).textContent = 'Assigned to ' + assignedVendor;
+  document.querySelector(`#wo-list-client button[onclick="routeWO(${id})"]`).textContent = 'In Progress';
+  document.getElementById('status-' + id).textContent = 'In Progress';
+}
+
+function vendorAction(id) {
+  document.getElementById('vstatus-' + id).textContent = 'Accepted';
+  // Update client status to In Progress
+  document.getElementById('status-' + id).textContent = 'In Progress';
+}
+</script>
+<script>
+  // Mock demo scheduling with preset data
+  function demoMock() {
+    const formData = {
+      firstName: 'John',
+      lastName: 'Doe',
+      email: 'john.doe@acme.com',
+      company: 'Acme Corp',
+      phone: '123-456-7890',
+      time: 'afternoon'
+    };
+    closeModal();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setTimeout(() => {
+      alert(`✅ Demo Scheduled Successfully!\n\nHi ${formData.firstName}, thank you for your interest in FFM!\n\n📅 Demo Details:\n• Company: ${formData.company}\n• Preferred Time: ${formData.time.charAt(0).toUpperCase() + formData.time.slice(1)}\n• Contact: ${formData.email}\n\n📧 Next Steps:\n• Confirmation email sent\n• Calendar invite within 30 minutes\n• Pre-demo materials delivered\n• Dedicated solutions consultant assigned\n\nWe'll showcase how FFM can save your organization 25-40% on facilities management costs!`);
+    }, 800);
+  }
+
+  // Mock RFP submission with preset data
+  function rfpMock() {
+    const formData = {
+      name: 'Jane Smith',
+      email: 'jane.smith@enterprise.org',
+      organization: 'Enterprise Solutions',
+      budget: '100k-250k',
+      description: 'Seeking a full-service FM partner for our multi-site portfolio.'
+    };
+    closeModal();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setTimeout(() => {
+      alert(`🚀 RFP Submitted Successfully!\n\nThank you ${formData.name}!\n\n📋 RFP Summary:\n• Organization: ${formData.organization}\n• Budget Range: $${formData.budget.replace('k', ',000')}\n• Contact: ${formData.email}\n\n⏰ Response Timeline:\n• Initial review: 24 hours\n• Detailed proposal: 3-5 business days\n• Technical presentation: Within 1 week\n• Custom pricing: 5-7 business days\n\nRFP ID: FFM-${Date.now()}\n\nOur team will contact you within 24 hours to discuss your specific requirements!`);
+    }, 800);
+  }
+</script>
+
+</body>
+</html>
